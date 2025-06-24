@@ -1,6 +1,6 @@
 import Header from './Header/Header.jsx';
 import Gallery from './Gallery/Gallery.jsx';
-import Footer from './Footer.jsx';
+import Footer from './Footer/Footer.jsx';
 
 
 function App() {

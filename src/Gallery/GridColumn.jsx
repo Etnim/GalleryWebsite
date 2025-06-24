@@ -1,4 +1,4 @@
-import DesignCard from "../DesignCard/DesignCard";
+import DesignCard from "./DesignCard/DesignCard";
 import PropTypes from 'prop-types';
 
 function GridColumn({ cards }) {
