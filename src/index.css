@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "Larken-Thin";
+    src: url("./fonts/larken-thin.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "Larken-Extra-Bold";
+    src: url("./fonts/larken-extra-bold.otf") format("truetype");
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: "Larken-Thin", sans-serif;
+}
