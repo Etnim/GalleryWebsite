@@ -13,3 +13,11 @@ body{
     color: white;
     font-family: "Larken-Thin", sans-serif;
 }
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
