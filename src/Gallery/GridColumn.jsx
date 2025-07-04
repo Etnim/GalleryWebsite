@@ -1,7 +1,10 @@
 import DesignCard from "./DesignCard/DesignCard";
 import PropTypes from 'prop-types';
+import React, { useRef, useEffect } from "react";
+
 
 function GridColumn({ cards }) {
+
     return (
         <div className="grid-column">
             {cards.map(card => (

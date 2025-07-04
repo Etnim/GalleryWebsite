@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types'
+import styles from "./DesignCard.module.css";
 
 function TagList({ tags = ["No tags available"] }) {
     tags.sort();
 
     return (
-        <ul>
+        <ul className={styles.tag-list}>
             {tags.map(tag => (<li>{tag}</li>))}
         </ul>
     );
