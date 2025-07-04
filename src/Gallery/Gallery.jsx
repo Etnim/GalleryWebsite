@@ -20,11 +20,12 @@ function Gallery() {
     }]
 
     return (
-        <>
+        <div className="gallery">
             <GridColumn cards={listOfCards}></GridColumn>
             <GridColumn cards={listOfCards}></GridColumn>
             <GridColumn cards={listOfCards}></GridColumn>
-        </>
+            <GridColumn cards={listOfCards}></GridColumn>
+        </div>
     );
 }
 

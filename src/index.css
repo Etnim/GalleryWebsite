@@ -1,15 +1,23 @@
 @font-face {
-    font-family: "Larken-Thin";
-    src: url("./fonts/larken-thin.otf") format("truetype");
+  font-family: Larken-Thin;
+  src: url("./fonts/larken-thin.otf") format("truetype");
 }
 
 @font-face {
-    font-family: "Larken-Extra-Bold";
-    src: url("./fonts/larken-extra-bold.otf") format("truetype");
+  font-family: Larken-Extra-Bold;
+  src: url("./fonts/larken-extra-bold.otf") format("truetype");
 }
 
-body{
-    background-color: black;
-    color: white;
-    font-family: "Larken-Thin", sans-serif;
+body {
+  background-color: black;
+  color: white;
+  font-family: Larken-Thin, sans-serif;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
 }

@@ -1,23 +1,32 @@
 .card {
-  border: 1px solid hsl(0, 0, 80%);
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.068);
   padding: 20px;
-  margin: 10px;
-  text-align: center;
+  margin: 0;
+  text-align: left;
   max-width: 250px;
-  display: inline-block;
 }
 
-.card .cardImage {
+.card .card-image {
   width: 200px;
   height: auto;
   margin-bottom: 10px;
 }
 
-.card .cardTitle {
-  font-family: "Larken-Thin",sans-serif;
-  font-size: 16px;
+.card .card-title {
+  font-family: Larken-Thin, sans-serif;
+  font-size: 12px;
   font-weight: bold;
-  margin: 0px;
+  margin: 0;
+}
+
+.tag-list {
+  display: inline-flex;
+  padding-left: 0;
+  list-style: none;
+  gap: 5px;
+}
+
+.tag-list li {
+  font-size: 0.7rem;
+  background-color: rgb(111 255 0);
+  color: black;
 }
