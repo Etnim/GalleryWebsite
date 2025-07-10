@@ -10,9 +10,11 @@
 
 body {
   background-color: black;
-  color: white;
-  font-family: Larken-Thin, sans-serif;
-}
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-family: Larken-Thin, sans-serif;
+  }
 
 .gallery {
   display: flex;

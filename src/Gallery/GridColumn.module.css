@@ -1,0 +1,38 @@
+.gridColumn {
+    padding: 0.5em;
+}
+
+.col0 {
+    width: 37%;
+}
+
+.col1 {
+    width: 23%;
+}
+
+.col2 {
+    width: 15%;
+}
+
+.col3 {
+    width: 15%;
+}
+
+
+@media (max-width: 800px) {
+  .col0,
+  .col1,
+  .col2,
+  .col3 {
+    width: 40% !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .col0,
+  .col1,
+  .col2,
+  .col3 {
+    width: 70% !important;
+  }
+}

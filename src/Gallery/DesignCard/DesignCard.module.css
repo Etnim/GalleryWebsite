@@ -1,17 +1,15 @@
 .card {
-  padding: 20px;
   margin: 0;
   text-align: left;
-  max-width: 250px;
+  width: 100%;
 }
 
-.card .cardImage {
-  width: 200px;
+.cardImage {
   height: auto;
-  margin-bottom: 10px;
+  width: 100%;
 }
 
-.card .cardTitle {
+.cardTitle {
   font-family: Larken-Thin, sans-serif;
   font-size: 12px;
   font-weight: bold;
@@ -26,6 +24,7 @@
 }
 
 .tagList li {
+  font-size-adjust: 0.7;
   font-size: 0.7rem;
   background-color: rgb(111 255 0);
   color: black;
