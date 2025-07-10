@@ -1,5 +1,6 @@
 import DesignPic from '../assets/TheBest.png'
 import GridColumn from "./GridColumn";
+import styles from "./GridColumn.module.css";
 
 
 function Gallery() {
@@ -19,13 +20,22 @@ function Gallery() {
         imageSrc: DesignPic
     }]
 
+    const columnsAmount = 4;
+
+    const gallery = listOfCards.map(card =>
+        Array(columnsAmount).fill(card)
+    );
+
+    const galleryColumns = Array.from({ length: columnsAmount }, (_, j) => (
+        <GridColumn
+            key={j}
+            className={styles[`col${j}`]}
+            cards={gallery.map(row => row[j])}
+        />
+    ));
+
     return (
-        <div className="gallery">
-            <GridColumn cards={listOfCards}></GridColumn>
-            <GridColumn cards={listOfCards}></GridColumn>
-            <GridColumn cards={listOfCards}></GridColumn>
-            <GridColumn cards={listOfCards}></GridColumn>
-        </div>
+        <div className="gallery"> {galleryColumns} </div>
     );
 }
 
