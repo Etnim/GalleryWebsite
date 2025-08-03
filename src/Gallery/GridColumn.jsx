@@ -11,7 +11,6 @@ function GridColumn({ cards, className }) {
         <div className={[styles.gridColumn, className].join(' ')}>
             {cards.map(card => (
                 <DesignCard
-                    key={card.cardName}
                     cardName={card.cardName}
                     listOfTags={card.listOfTags}
                     imageSrc={card.imageSrc}>
