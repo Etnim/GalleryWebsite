@@ -3,12 +3,13 @@ import PropTypes from 'prop-types';
 import React, { useRef, useEffect } from "react";
 import styles from "./GridColumn.module.css";
 
-
-
-function GridColumn({ cards, className }) {
+const GridColumn = React.forwardRef(function GridColumn({ cards, className, onWheel }, ref) {
 
     return (
-        <div className={[styles.gridColumn, className].join(' ')}>
+        <div
+            ref={ref}
+            onWheel={onWheel}
+            className={[styles.gridColumn, className].join(' ')}>
             {cards.map(card => (
                 <DesignCard
                     cardName={card.cardName}
@@ -19,6 +20,7 @@ function GridColumn({ cards, className }) {
         </div>
     )
 }
+)
 
 export default GridColumn;
 GridColumn.propTypes = {
