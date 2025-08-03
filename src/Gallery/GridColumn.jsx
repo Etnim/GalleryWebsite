@@ -1,20 +1,20 @@
 import DesignCard from "./DesignCard/DesignCard";
 import PropTypes from 'prop-types';
 import React, { useRef, useEffect } from "react";
-import styles from "./GridColumn.module.css";
+import styles from "./Gallery.module.css";
 
-const GridColumn = React.forwardRef(function GridColumn({ cards, className, onWheel }, ref) {
+const GridColumn = React.forwardRef(function GridColumn({ cards, className}, ref) {
 
     return (
         <div
             ref={ref}
-            onWheel={onWheel}
             className={[styles.gridColumn, className].join(' ')}>
-            {cards.map(card => (
+            {cards.map((card, idx) => (
                 <DesignCard
+                    key={card.id ?? `${card.cardName}-${idx}`}
                     cardName={card.cardName}
                     listOfTags={card.listOfTags}
-                    imageSrc={card.imageSrc}>
+                    media={card.media}>
                 </DesignCard>
             ))}
         </div>
@@ -28,7 +28,7 @@ GridColumn.propTypes = {
         PropTypes.shape({
             cardName: PropTypes.string.isRequired,
             listOfTags: PropTypes.arrayOf(PropTypes.string).isRequired,
-            imageSrc: PropTypes.string.isRequired
+            media: PropTypes.string.isRequired
         })
     ).isRequired
 };

@@ -6,7 +6,9 @@ function TagList({ tags = ["No tags available"] }) {
 
     return (
         <ul className={styles.tagList}>
-            {tags.map(tag => (<li>{tag}</li>))}
+            {tags.map((tag, i) => (
+                <li key={`${tag}-${i}`}>{tag}</li>
+            ))}
         </ul>
     );
 }
