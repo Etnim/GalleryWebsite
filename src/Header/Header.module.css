@@ -1,3 +1,14 @@
+@font-face {
+    font-family: Larken-Bold;
+    src: url("./fonts/Larken/LarkenDEMO-Bold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: Larken-Extra-Bold;
+  src: url("./fonts/larken-extra-bold.otf") format("truetype");
+}
+
+
 .navbar {
     display: flex;
     align-items: center;
@@ -24,20 +35,21 @@
     background: none;
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: white; 
+    -webkit-text-fill-color: white;
     transition: all 0.5s ease;
 }
 
 .navbar a:hover {
-    font-size: 25px;
-    background-image: linear-gradient(to right,
-            #7cffed,
-            #e089ff,
-            #cd5ae2);
-    -webkit-text-fill-color: transparent;
+    transform: scale(1.2);
+    font-family: Larken-Extra-Bold;
+    /* background-image: linear-gradient(to right,
+            #ff977a,
+            #ff784a,
+            #ff3c0b);
+    -webkit-text-fill-color: transparent; */
 }
 
-.navbar img{
+.navbar img {
     width: 25px;
     height: 25px;
     border-radius: 20%;
@@ -45,10 +57,9 @@
 }
 
 .navbar img:hover {
-    width: 32px;
-    height: 32px;
-    background-image: linear-gradient(to right,
+    transform: scale(1.2);
+    /* background-image: linear-gradient(to right,
             #7cffee90,
             #e089ff9c,
-            #ce5ae2a1);
+            #ce5ae2a1); */
 }

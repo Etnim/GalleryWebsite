@@ -10,9 +10,13 @@
 
 body {
   background-color: black;
-    color: white;
-    padding: 0;
-    margin: 0;
-    font-family: Larken-Thin, sans-serif;
-  }
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-family: Larken-Thin, sans-serif;
+  cursor: url('./assets/cursor.png') 12 12, auto;
+}
 
+a, button, .clickable {
+  cursor: url('./assets/cursor.png') 12 12, pointer;
+}

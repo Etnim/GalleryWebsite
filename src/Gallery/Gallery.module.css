@@ -15,23 +15,24 @@
 }
 
 .col0 {
-    width: 30%;
+  width: 30%;
 }
 
 .col1 {
-    width: 23%;
+  width: 23%;
 }
 
 .col2 {
-    width: 18%;
+  width: 18%;
 }
 
 .col3 {
-    width: 18%;
+  width: 18%;
 }
 
 
 @media (max-width: 800px) {
+
   .col0,
   .col1,
   .col2,

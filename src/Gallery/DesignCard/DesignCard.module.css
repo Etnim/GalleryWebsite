@@ -29,3 +29,8 @@
   background-color: rgb(111 255 0);
   color: black;
 }
+
+.card:hover {
+  transform: scale(1.02);
+  transition: all 0.8s ease-in-out;
+}
