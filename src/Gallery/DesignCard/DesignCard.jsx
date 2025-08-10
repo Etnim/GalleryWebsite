@@ -2,51 +2,41 @@ import PropTypes from 'prop-types';
 import TagList from './TagList';
 import styles from './DesignCard.module.css';
 
+const DEFAULT_PRELOAD = 'metadata';
+const DEFAULT_LOUDING = 'lazy';
+
 export default function DesignCard({
     cardName = 'Empty Name',
     listOfTags = [],
     media = { type: 'image', src: '' },
 }) {
-    const {
-        type = 'image',
-        src,
-        alt,
-        poster,
-        sources = [],
-        ...videoProps
-    } = media || {};
-
-    const defaultVideoProps = { controls: true, playsInline: true, preload: 'metadata' };
-
-
     return (
         <div className={styles.card}>
-            {type === 'video' ? (
+            {media.type === 'video' ? (
                 <video
                     className={styles.media}
-                    poster={poster}
-                    {...defaultVideoProps}
-                    {...videoProps}
+                    poster={media.poster || undefined}
+                    autoPlay={!!media.autoPlay}
+                    muted={!!media.muted}
+                    loop={!!media.loop}
+                    playsInline={media.playsInline !== false}
+                    controls={!!media.controls}
+                    preload={media.preload || 'metadata'}
                 >
-                    {sources.length > 0
-                        ? sources.map(s => (
-                            <source key={s.src} src={s.src} type={s.type} />
-                        ))
-                        : src
-                            ? <source src={src} />
-                            : null}
+                    {media.src && <source src={media.src} />}
+                    {media.sources?.map(s => <source key={s.src} src={s.src} type={s.type} />)}
                     Sorry, your browser doesn’t support embedded videos.
                 </video>
-            ) : (
-                src && (
+            ) :
+                media?.src && (
                     <img
                         className={styles.media}
-                        src={src}
-                        alt={alt || `Image of ${cardName}`}
+                        src={media.src}
+                        alt={media.alt || `Image of ${cardName}`}
                         loading="lazy"
                     />
                 )
-            )}
+            }
 
             <h2 className={styles.cardTitle}>{cardName}</h2>
             <TagList tags={listOfTags} />
@@ -59,11 +49,7 @@ DesignCard.propTypes = {
     listOfTags: PropTypes.arrayOf(PropTypes.string),
     media: PropTypes.shape({
         type: PropTypes.oneOf(['image', 'video']).isRequired,
-        src: PropTypes.string,
-        alt: PropTypes.string,
         poster: PropTypes.string,
-        sources: PropTypes.arrayOf(
-            PropTypes.shape({ src: PropTypes.string.isRequired, type: PropTypes.string })
-        ),
+        src: PropTypes.string,
     }),
 };

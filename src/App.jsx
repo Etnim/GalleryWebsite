@@ -1,57 +1,45 @@
+import YAML from 'yaml';
 import Header from './Header/Header.jsx';
 import Gallery from './Gallery/Gallery.jsx';
 import Footer from './Footer/Footer.jsx';
-import DesignPic from './assets/TheBest.png';
-import ignatVideo from "./assets/media/IgnatIsTheBestAnimated.mp4";
-import galaxyVideo from "./assets/media/galaxy.mp4";
-import IgnatPicCropped from './assets/TheBestCropped.png';
 
-const imageMedia = { type: "image", src: DesignPic, alt: "Design 3" };
-const videoMedia = {
-  type: "video",
-  poster: DesignPic,
-  src: galaxyVideo,
-  autoPlay: true,
-  muted: true,    
-  loop: true,
-  playsInline: true,
-  controls: false    
-};
+const files = import.meta.glob('./content/works/**/index.mdx', { eager: true, as: 'raw' });
 
-const videoIgnatAnimated = {
-  type: "video",
-  poster: IgnatPicCropped,
-  src: ignatVideo,
-  autoPlay: true,
-  muted: true,
-  loop: true,
-  playsInline: true,
-  controls: false
+const assets = import.meta.glob('./content/works/**/*.{png,jpg,jpeg,webp,avif,gif,svg,mp4,webm}', {
+  eager: true,
+  import: 'default',
+});
+
+function parseFrontmatter(raw) {
+  const m = /^---\s*[\r\n]+([\s\S]*?)\s*---/m.exec(raw);
+  try { return m ? YAML.parse(m[1] || '') : null; } catch { return null; }
 }
 
-const cards = [
-  { cardName: "Design 1", listOfTags: ["Tag1", "Tag2", "Tag3"], media: videoMedia },
-  { cardName: "Design 2", listOfTags: ["Tag4", "Tag5"], media: videoIgnatAnimated },
-  { cardName: "Design 3", listOfTags: ["Tag6", "Tag7", "Tag8"], media: imageMedia },
-  { cardName: "Design 1", listOfTags: ["Tag1", "Tag2", "Tag3"], media: videoMedia },
-  { cardName: "Design 2", listOfTags: ["Tag4", "Tag5"], media: videoIgnatAnimated },
-  { cardName: "Design 3", listOfTags: ["Tag6", "Tag7", "Tag8"], media: imageMedia }, 
-  { cardName: "Design 1", listOfTags: ["Tag1", "Tag2", "Tag3"], media: videoMedia },
-  { cardName: "Design 2", listOfTags: ["Tag4", "Tag5"], media: videoIgnatAnimated },
-  { cardName: "Design 3", listOfTags: ["Tag6", "Tag7", "Tag8"], media: imageMedia }, 
-  { cardName: "Design 1", listOfTags: ["Tag1", "Tag2", "Tag3"], media: videoMedia },
-  { cardName: "Design 2", listOfTags: ["Tag4", "Tag5"], media: videoIgnatAnimated },
-  { cardName: "Design 3", listOfTags: ["Tag6", "Tag7", "Tag8"], media: imageMedia }, 
-  { cardName: "Design 1", listOfTags: ["Tag1", "Tag2", "Tag3"], media: videoMedia },
-  { cardName: "Design 2", listOfTags: ["Tag4", "Tag5"], media: videoIgnatAnimated },
-  { cardName: "Design 3", listOfTags: ["Tag6", "Tag7", "Tag8"], media: imageMedia }, 
-  { cardName: "Design 1", listOfTags: ["Tag1", "Tag2", "Tag3"], media: videoMedia },
-  { cardName: "Design 2", listOfTags: ["Tag4", "Tag5"], media: videoIgnatAnimated },
-  { cardName: "Design 3", listOfTags: ["Tag6", "Tag7", "Tag8"], media: imageMedia }
+function resolveAsset(mdxPath, relPath) {
+  if (!relPath) return null;
+  if (relPath.startsWith('/')) return relPath;
+  const dir = mdxPath.replace(/\/index\.mdx$/, '');
+  const key = `${dir}/${relPath.replace(/^.\//, '')}`;
+  return assets[key] || null;
+}
 
-];
+const cards = Object.entries(files).map(([path, raw]) => {
+  const data = parseFrontmatter(raw);
+  const media = data.media ? {
+    ...data.media,
+    src: resolveAsset(path, data.media.src),
+    poster: resolveAsset(path, data.media.poster),
+  } : null;
 
-function App() {
+  return {
+    cardName: data.cardName ?? 'Untitled',
+    listOfTags: data.listOfTags ?? [],
+    media,
+  };
+});
+
+
+export default function App() {
   return (
     <>
       <Header />
@@ -60,5 +48,3 @@ function App() {
     </>
   );
 }
-
-export default App
