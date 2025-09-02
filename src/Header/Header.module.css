@@ -42,24 +42,17 @@
 .navbar a:hover {
     transform: scale(1.2);
     font-family: Larken-Extra-Bold;
-    /* background-image: linear-gradient(to right,
-            #ff977a,
-            #ff784a,
-            #ff3c0b);
-    -webkit-text-fill-color: transparent; */
+}
+
+.navbar #logo {
+    height: 2.5rem;
 }
 
 .navbar img {
-    width: 25px;
     height: 25px;
-    border-radius: 20%;
     transition: all 0.5s ease;
 }
 
 .navbar img:hover {
     transform: scale(1.2);
-    /* background-image: linear-gradient(to right,
-            #7cffee90,
-            #e089ff9c,
-            #ce5ae2a1); */
 }
