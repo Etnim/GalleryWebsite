@@ -1,0 +1,5 @@
+{
+  "src": "./cover.png",
+  "alt": "Cover of the project",
+  "loading": "lazy"
+}

@@ -1,0 +1,9 @@
+{
+  "poster":"./cover.png",
+  "src": "./animation.mp4",
+  "autoPlay ": true,
+  "muted": true,
+  "loop": true,
+  "playsInline": true,
+  "controls": false
+}
