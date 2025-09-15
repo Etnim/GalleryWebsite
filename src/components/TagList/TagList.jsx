@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import styles from "./DesignCard.module.css";
+import styles from "../DesignCard/DesignCard.module.css";
 
 function TagList({ tags = ["No tags available"] }) {
     tags.sort();

@@ -1,10 +1,9 @@
 import YAML from 'yaml';
-import Header from './Header/Header.jsx';
-import Gallery from './Gallery/Gallery.jsx';
-import Footer from './Footer/Footer.jsx';
+import Header from './components/Header/Header.jsx';
+import Gallery from './components/Gallery/Gallery.jsx';
+import Footer from './components/Footer/Footer.jsx';
 
 const files = import.meta.glob('./content/works/**/index.mdx', { eager: true, as: 'raw' });
-
 const assets = import.meta.glob('./content/works/**/*.{png,jpg,jpeg,webp,avif,gif,svg,mp4,webm}', {
   eager: true,
   import: 'default',

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import TagList from './TagList';
-import styles from './DesignCard.module.css';
+import TagList from '../TagList/TagList';
+import styles from '../DesignCard/DesignCard.module.css';
 
 const DEFAULT_PRELOAD = 'metadata';
 const DEFAULT_LOUDING = 'lazy';
