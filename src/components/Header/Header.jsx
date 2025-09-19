@@ -1,14 +1,15 @@
 import styles from "./Header.module.css";
+import { Link } from "react-router-dom";
 
 function Header() {
     return (
         <header>
             <nav className={styles.navbar}>
-                <a href="#home"><img id={styles.logo} src={"WhiteLogo.png"}/></a>
+                <Link to="/GalleryWebsite/"><img id={styles.logo} src={"WhiteLogo.png"} /></Link>
                 <ul>
-                    <li><a href="#contact">CONTACT</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="https://www.linkedin.com/in/ignat-voronovich-313951241/"><img src={"LinkedInicon.png"}></img></a></li>
+                    <Link to="/GalleryWebsite/contact/"><li>CONTACT</li></Link>
+                    <Link to="/GalleryWebsite/about/"><li>ABOUT</li></Link>
+                    <Link to="https://www.linkedin.com/in/ignat-voronovich-313951241/"> <li><img src={"LinkedInicon.png"}></img></li></Link>
                 </ul>
             </nav>
         </header>

@@ -1,9 +1,7 @@
 import PropTypes from 'prop-types';
 import TagList from '../TagList/TagList';
 import styles from '../DesignCard/DesignCard.module.css';
-
-const DEFAULT_PRELOAD = 'metadata';
-const DEFAULT_LOUDING = 'lazy';
+import {Link} from "react-router-dom";
 
 export default function DesignCard({
     cardName = 'Empty Name',
@@ -12,6 +10,7 @@ export default function DesignCard({
 }) {
     return (
         <div className={styles.card}>
+            <Link to={"/GalleryWebsite/projects/"}>
             {media.type === 'video' ? (
                 <video
                     className={styles.media}
@@ -37,7 +36,7 @@ export default function DesignCard({
                     />
                 )
             }
-
+            </Link>
             <h2 className={styles.cardTitle}>{cardName}</h2>
             <TagList tags={listOfTags} />
         </div>

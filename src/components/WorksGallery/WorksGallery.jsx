@@ -1,6 +1,6 @@
-import React, { useRef, useEffect, useMemo } from 'react';
+import React, { useRef, useMemo, useEffect } from "react";
 import GridColumn from './GridColumn';
-import s from './Gallery.module.css';
+import styles from './WorksGallery.module.css';
 
 const DRAG_PER_SEC = 0.95;
 const normalizeWheel = e => (e.deltaMode === 1 ? e.deltaY * 16 : e.deltaMode === 2 ? e.deltaY * window.innerHeight : e.deltaY);
@@ -71,9 +71,9 @@ export default function Gallery({ listOfCards, columns = 4, columnSpeeds = [1, 3
     }
 
     return (
-        <div className={s.gallery} ref={containerRef}>
+        <div className={styles.gallery} ref={containerRef}>
             {galleryColumns.map((cards, i) => (
-                <GridColumn key={i} cards={cards} className={s[`col${i}`]} />
+                <GridColumn key={i} cards={cards} className={styles[`col${i}`]} />
             ))}
         </div>
     );

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { useRef, useEffect } from "react";
-import styles from "./Gallery.module.css";
+import styles from "./WorksGallery.module.css";
 import DesignCard from "../DesignCard/DesignCard";
 
 const GridColumn = React.forwardRef(function GridColumn({ cards, className}, ref) {
@@ -18,7 +18,7 @@ const GridColumn = React.forwardRef(function GridColumn({ cards, className}, ref
                 </DesignCard>
             ))}
         </div>
-    )
+    );
 }
 )
 
