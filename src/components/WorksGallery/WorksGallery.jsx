@@ -14,7 +14,7 @@ const buildColumns = (cards, columns) => {
     return out;
 };
 
-export default function Gallery({ listOfCards, columns = 4, columnSpeeds = [1, 3.5, 4, 5] }) {
+export default function Gallery({listOfCards, columns = 4, columnSpeeds = [1, 3.5, 4, 5] }) {
     const galleryColumns = useMemo(() => buildColumns(listOfCards, columns), [listOfCards, columns]);
     const containerRef = useRef(null);
     const velocities = useRef(new Array(galleryColumns.length).fill(0));

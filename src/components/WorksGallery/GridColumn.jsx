@@ -3,18 +3,17 @@ import React, { useRef, useEffect } from "react";
 import styles from "./WorksGallery.module.css";
 import DesignCard from "../DesignCard/DesignCard";
 
-const GridColumn = React.forwardRef(function GridColumn({ cards, className}, ref) {
-
+const GridColumn = React.forwardRef(function GridColumn({ cards, className }, ref) {
     return (
         <div
             ref={ref}
             className={[styles.gridColumn, className].join(' ')}>
             {cards.map((card, idx) => (
                 <DesignCard
-                    key={card.id ?? `${card.cardName}-${idx}`}
-                    cardName={card.cardName}
+                    key={card.id ?? `${card.title}-${idx}`}
+                    cardName={card.title}
                     listOfTags={card.listOfTags}
-                    media={card.media}>
+                    cover={card.cover}>
                 </DesignCard>
             ))}
         </div>

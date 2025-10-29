@@ -1,0 +1,34 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "title": "Infineon",
+            "description": "A cutting-edge project focused on AI development.",
+            "detailsMediaPath": ["", "", ""],
+            "coverType": "video",
+            "coverPoster": "cover.png",
+            "coverVideo": "animation.mp4",
+            "listOfTags": ["Branding", "Packaging", "Logotype", "Animation", "Photography"]
+        },
+        {
+            "id": 2,
+            "title": "Zephyr",
+            "description": "A cutting-edge project focused on AI development.",
+            "detailsMediaPath": ["", "", ""],
+            "coverType": "image",
+            "coverPoster": "cover.png",
+            "listOfTags": ["UI/UX", "Branding", "Logotype", "Animation"],
+            "altText": "Zephyr project cover image"
+        },
+        {
+            "id": 3,
+            "title": "Monkey Dream",
+            "description": "A cutting-edge project focused on AI development.",
+            "detailsMediaPath": ["", "", ""],
+            "coverType": "image",
+            "coverPoster": "cover.png",
+            "listOfTags": ["Art", "Print", "Photography"],
+            "altText": "Monkey Dream project cover image"
+        }
+    ]
+}
