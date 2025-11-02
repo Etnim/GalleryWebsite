@@ -7,6 +7,10 @@
   height: 100vh;
   overflow: hidden;
 }
+.link {
+  text-decoration: none;
+  color: inherit;
+}
 
 .gridColumn {
   padding: 0.5em;

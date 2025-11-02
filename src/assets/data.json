@@ -31,13 +31,13 @@
             "description": "An experimental artbook designed  ",
             "detailsMediaPath": ["", "", ""],
             "coverType": "image",
-            "coverPoster": "MonkeyDream_cover_image.jpg",
+            "coverPoster": "MonkeyDrem_image_cover.jpg",
             "listOfTags": ["Art", "Print", "Photography"],
             "altText": "Monkey Dream project cover image"
         },
         {
             "id": 4,
-            "title": "Monkey Dream",
+            "title": "Riot-Related Injuries",
             "description": "A cutting-edge project focused on AI development.",
             "detailsMediaPath": ["", "", ""],
             "coverType": "image",
@@ -67,11 +67,12 @@
         },
         {
             "id": 7,
-            "title": "Monkey Dream",
+            "title": "Terraform",
             "description": "A cutting-edge project focused on AI development.",
             "detailsMediaPath": ["", "", ""],
-            "coverType": "image",
-            "coverPoster": "cover.png",
+            "coverType": "video",
+            "coverPoster": "Terraform_cover_image.png",
+            "coverVideo": "Terraform_cover_video.mp4",
             "listOfTags": ["Art", "Print", "Photography"],
             "altText": "Monkey Dream project cover image"
         },
@@ -87,7 +88,7 @@
         },
         {
             "id": 9,
-            "title": "Monkey Dream",
+            "title": "Hey 1",
             "description": "A cutting-edge project focused on AI development.",
             "detailsMediaPath": ["", "", ""],
             "coverType": "image",
@@ -97,7 +98,7 @@
         },
         {
             "id": 10,
-            "title": "Monkey Dream",
+            "title": "Hey 2",
             "description": "A cutting-edge project focused on AI development.",
             "detailsMediaPath": ["", "", ""],
             "coverType": "image",
@@ -107,27 +108,39 @@
         },
         {
             "id": 11,
-            "title": "Monkey Dream",
+            "title": "Veles",
             "description": "A cutting-edge project focused on AI development.",
             "detailsMediaPath": ["", "", ""],
             "coverType": "image",
             "coverPoster": "cover.png",
-            "listOfTags": ["Art", "Print", "Photography"],
+            "listOfTags": [ "Print", "Packaging", "Photography"],
             "altText": "Monkey Dream project cover image"
         },
         {
             "id": 12,
-            "title": "Monkey Dream",
+            "title": "Shameless Snacks",
             "description": "A cutting-edge project focused on AI development.",
             "detailsMediaPath": ["", "", ""],
-            "coverType": "image",
-            "coverPoster": "cover.png",
-            "listOfTags": ["Art", "Print", "Photography"],
+            "coverType": "video",
+            "coverPoster": "ShamelessSnacks _cover_image.jpg",
+            "coverVideo": "ShamelessSnacks _cover_video.mp4",
+            "listOfTags": ["Animation", "Packaging", "Typography"],
             "altText": "Monkey Dream project cover image"
         },
          {
             "id": 13,
-            "title": "Monkey Dream",
+            "title": "Holy",
+            "description": "A cutting-edge project focused on AI development.",
+            "detailsMediaPath": ["", "", ""],
+            "coverType": "video",
+            "coverPoster": "cover.png",
+            "coverVideo": "Holy_cover_animation.mp4",
+            "listOfTags": ["Art", "Print", "Photography"],
+            "altText": "Monkey Dream project cover image"
+        },
+         {
+            "id": 14,
+            "title": "Hey 3",
             "description": "A cutting-edge project focused on AI development.",
             "detailsMediaPath": ["", "", ""],
             "coverType": "image",
@@ -136,8 +149,18 @@
             "altText": "Monkey Dream project cover image"
         },
          {
-            "id": 4,
-            "title": "Monkey Dream",
+            "id": 15,
+            "title": "Kill Your Friends",
+            "description": "A cutting-edge project focused on AI development.",
+            "detailsMediaPath": ["", "", ""],
+            "coverType": "image",
+            "coverPoster": "Kill Your Friends_cover_image 2.png",
+            "listOfTags": ["Art", "Photography"],
+            "altText": "Monkey Dream project cover image"
+        },
+         {
+            "id": 16,
+            "title": "Hey 5",
             "description": "A cutting-edge project focused on AI development.",
             "detailsMediaPath": ["", "", ""],
             "coverType": "image",
@@ -146,28 +169,8 @@
             "altText": "Monkey Dream project cover image"
         },
          {
-            "id": 5,
-            "title": "Monkey Dream",
-            "description": "A cutting-edge project focused on AI development.",
-            "detailsMediaPath": ["", "", ""],
-            "coverType": "image",
-            "coverPoster": "cover.png",
-            "listOfTags": ["Art", "Print", "Photography"],
-            "altText": "Monkey Dream project cover image"
-        },
-         {
-            "id": 6,
-            "title": "Monkey Dream",
-            "description": "A cutting-edge project focused on AI development.",
-            "detailsMediaPath": ["", "", ""],
-            "coverType": "image",
-            "coverPoster": "cover.png",
-            "listOfTags": ["Art", "Print", "Photography"],
-            "altText": "Monkey Dream project cover image"
-        },
-         {
-            "id": 7,
-            "title": "Monkey Dream",
+            "id": 17,
+            "title": "Hey 6",
             "description": "A cutting-edge project focused on AI development.",
             "detailsMediaPath": ["", "", ""],
             "coverType": "image",
