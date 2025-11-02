@@ -7,7 +7,7 @@ const ProjectDetails = () => {
 
     return (
         <div>
-            <h1>Project details page + {id}</h1>
+            <h1>{project.title}</h1>
             <p>{project.description}</p>
             <Outlet />
         </div>
