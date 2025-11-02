@@ -9,11 +9,16 @@ export function getAllProjects() {
     })
 }
 
+/**
+ * @param {number} id 
+ * @returns 
+ */
 export function getProjectById(id) {
     const mediaFolder = _getMediaFolderPath(id);
     const projectData = _getProjectData(id);
 
     return {
+        'id': projectData.id,
         'title': projectData.title,
         'listOfTags': projectData.listOfTags,
         'cover': _getCover(mediaFolder, projectData),
@@ -67,8 +72,12 @@ function _getMediaFolderPath(id) {
     return assetsPath +'/work' + id;
 }
 
+/**
+ * @param {number} id 
+ * @returns 
+ */
 function _getProjectData(id) {
-    return projects.find(project => project.id === id);
+    return projects.find(project => project.id === parseInt(id));
 }
 
 function _getCoverImage(mediaFolder, projectData) {

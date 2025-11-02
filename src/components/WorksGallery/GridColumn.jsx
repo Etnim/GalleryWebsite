@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React, { useRef, useEffect } from "react";
 import styles from "./WorksGallery.module.css";
 import DesignCard from "../DesignCard/DesignCard";
+import { Link } from 'react-router-dom';
 
 const GridColumn = React.forwardRef(function GridColumn({ cards, className }, ref) {
     return (
@@ -9,15 +10,17 @@ const GridColumn = React.forwardRef(function GridColumn({ cards, className }, re
             ref={ref}
             className={[styles.gridColumn, className].join(' ')}>
             {cards.map((card, idx) => (
-                <DesignCard
-                    key={card.id ?? `${card.title}-${idx}`}
-                    cardName={card.title}
-                    listOfTags={card.listOfTags}
-                    cover={card.cover}>
-                </DesignCard>
+                <Link to={card.id.toString()}>
+                    <DesignCard
+                        key={card.id ?? `${card.title}-${idx}`}
+                        cardName={card.title}
+                        listOfTags={card.listOfTags}
+                        cover={card.cover}>
+                    </DesignCard>
+                </Link>
             ))}
         </div>
-    );
+    );  
 }
 )
 

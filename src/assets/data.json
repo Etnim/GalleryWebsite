@@ -29,6 +29,46 @@
             "coverPoster": "cover.png",
             "listOfTags": ["Art", "Print", "Photography"],
             "altText": "Monkey Dream project cover image"
+        },
+         {
+            "id": 4,
+            "title": "Monkey Dream",
+            "description": "A cutting-edge project focused on AI development.",
+            "detailsMediaPath": ["", "", ""],
+            "coverType": "image",
+            "coverPoster": "cover.png",
+            "listOfTags": ["Art", "Print", "Photography"],
+            "altText": "Monkey Dream project cover image"
+        },
+         {
+            "id": 5,
+            "title": "Monkey Dream",
+            "description": "A cutting-edge project focused on AI development.",
+            "detailsMediaPath": ["", "", ""],
+            "coverType": "image",
+            "coverPoster": "cover.png",
+            "listOfTags": ["Art", "Print", "Photography"],
+            "altText": "Monkey Dream project cover image"
+        },
+         {
+            "id": 6,
+            "title": "Monkey Dream",
+            "description": "A cutting-edge project focused on AI development.",
+            "detailsMediaPath": ["", "", ""],
+            "coverType": "image",
+            "coverPoster": "cover.png",
+            "listOfTags": ["Art", "Print", "Photography"],
+            "altText": "Monkey Dream project cover image"
+        },
+         {
+            "id": 7,
+            "title": "Monkey Dream",
+            "description": "A cutting-edge project focused on AI development.",
+            "detailsMediaPath": ["", "", ""],
+            "coverType": "image",
+            "coverPoster": "cover.png",
+            "listOfTags": ["Art", "Print", "Photography"],
+            "altText": "Monkey Dream project cover image"
         }
     ]
 }
