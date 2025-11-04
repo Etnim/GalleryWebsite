@@ -5,7 +5,7 @@ import remarkFrontmatter from 'remark-frontmatter';
 import remarkMdxFrontmatter from 'remark-mdx-frontmatter';
 
 export default defineConfig({
-  base: '/',
+  base: '/GalleryWebsite/',
   plugins: [
     mdx({
       remarkPlugins: [
