@@ -8,11 +8,11 @@ import ProjectDetails from './pages/ProjectDetails.jsx';
 export default function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path='/' element={<RootLayout />}>
+      <Route path='/GalleryWebsite/' element={<RootLayout />}>
         <Route index element={<Home />} />
-        <Route path=':id' element={<ProjectDetails />} />
-        <Route path='about' element={<About />} />
-        <Route path='contact' element={<Contact />} />
+        <Route path='/GalleryWebsite/:id' element={<ProjectDetails />} />
+        <Route path='/GalleryWebsite/about' element={<About />} />
+        <Route path='/GalleryWebsite/contact' element={<Contact />} />
       </Route>
     )
   )

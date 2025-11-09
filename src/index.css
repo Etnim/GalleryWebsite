@@ -1,11 +1,11 @@
 @font-face {
   font-family: Larken-Thin;
-  src: url("./fonts/larken-thin.otf") format("truetype");
+  src: url("./fonts/fonnts.com-Larken_Thin.otf") format("truetype");
 }
 
 @font-face {
   font-family: Larken-Extra-Bold;
-  src: url("./fonts/larken-extra-bold.otf") format("truetype");
+  src: url("./fonts/fonnts.com-Larken_ExtraBold.otf") format("truetype");
 }
 
 body {

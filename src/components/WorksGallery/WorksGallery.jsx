@@ -42,7 +42,7 @@ export default function Gallery({listOfCards, columns = 4, columnSpeeds = [1, 3.
             }
         };
 
-        el.addEventListener('wheel', onWheel, { capture: true, passive: false });
+        el.addEventListener('wheel', onWheel, { passive: true });
 
         return () => {
             el.removeEventListener('wheel', onWheel, { capture: true });

@@ -25,10 +25,54 @@
 
 .tagList li {
   font-size-adjust: 0.7;
+  font-family: Arial;
   font-size: 0.6rem;
-  padding: 0.1rem, 0.5rem;
-  background-color: rgba(255, 255, 255, 0.774);
+  padding: 0.1rem 0.6rem;
   color: black;
+}
+
+.tagAnimation {
+  background-color: #db15ce;
+}
+
+.tagArt {
+  background-color: #1fdb15;
+}
+
+.tagBranding {
+  background-color: #db6815;
+}
+
+.tagInfographic {
+  background-color: #158cdb;
+}
+
+.tagLogotype {
+  background-color: #15db7f;
+}
+
+.tagPackaging {
+  background-color: #db1515;
+}
+
+.tagPhotography {
+  background-color: #dbd815;
+}
+
+.tagPrint {
+  background-color: #a0db15;
+}
+
+.tagTypography {
+  background-color: #15dbc4;
+}
+
+.tagUIUX {
+  background-color: #5e15db;
+}
+
+.tagInfographic{
+  background-color: #158cdb;
 }
 
 .card:hover {
