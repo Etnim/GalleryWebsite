@@ -5,7 +5,6 @@
             "title": "Infineon",
             "description": "At the heart of every electronic device lies a microchip—a tiny marvel that powers enormous possibilities. Infineon takes this a step further, creating chips designed not just for performance, but for harmony. Microchips that sync, adapt and connect seamlessly.Minimal waste. Mutual replaceability. Synergized efficiency.",
             "coverType": "video",
-            "coverPoster": "Infineon_cover_image.png",
             "coverVideo": "Infineon_cover_animation.mp4",
             "listOfTags": ["Branding", "Packaging", "Logotype", "Animation"],
             "detailsMedia": ["", "", "", ""],
@@ -17,7 +16,6 @@
             "title": "Concrete Position",
             "description": "A micro-film project designed as part of the master thesis final project, during the 1st year of master studies at Vilnius Academy of Arts.vThe micro-film is a 2 minute long narrative from the 1st person view of an average labor worker during the totalitarian regime. It ironically depicts the morning routine of such person, commanded by the governmental voice of the “Big Brother”. The main point is to show from a different angle how the phrase “I am politically neutral” or “ I am not into politics” looks like in real life. The stable and grey morning routine of such person is gradually glitching or being torn by the flashbacks of the real life state cruelty. In addition the start and end of the film feature a “Gallows” game in a reversed rule set, where upon guessing the letter of the word “Neutral”, you get closer to being hanged, instead of winning. The project’s aim is to highlight the fact that the term “Neutrality” in itself does not really carry the meaning of not being on either side. Even a corpse is not neutral, as he serves as the fertilizer for the soil.",
             "coverType": "video",
-            "coverPoster": "ConcretePosition _cover_image.png",
             "coverVideo": "ConcretePosition_cover_animation.mp4",
             "listOfTags": ["UI/UX", "Branding", "Logotype", "Animation"],
             "altText": "Zephyr project cover image",
@@ -71,7 +69,6 @@
             "description": "A cutting-edge project focused on AI development.",
             "detailsMedia": ["", "", ""],
             "coverType": "video",
-            "coverPoster": "Terraform_cover_image.png",
             "coverVideo": "Terraform_cover_video.mp4",
             "listOfTags": ["Art", "Print", "Photography"],
             "altText": "Monkey Dream project cover image"
@@ -122,7 +119,6 @@
             "description": "A cutting-edge project focused on AI development.",
             "detailsMedia": ["", "", ""],
             "coverType": "video",
-            "coverPoster": "ShamelessSnacks _cover_image.jpg",
             "coverVideo": "ShamelessSnacks _cover_video.mp4",
             "listOfTags": ["Animation", "Packaging", "Typography"],
             "altText": "Monkey Dream project cover image"
@@ -133,7 +129,6 @@
             "description": "A cutting-edge project focused on AI development.",
             "detailsMedia": ["", "", ""],
             "coverType": "video",
-            "coverPoster": "cover.png",
             "coverVideo": "Holy_cover_animation.mp4",
             "listOfTags": ["Art", "Print", "Photography"],
             "altText": "Monkey Dream project cover image"

@@ -10,7 +10,7 @@ const GridColumn = React.forwardRef(function GridColumn({ cards, className }, re
             ref={ref}
             className={[styles.gridColumn, className].join(' ')}>
             {cards.map((card, idx) => (
-                <Link to={card.id.toString()} className={styles.link}>
+                <Link key={card.id} to={card.id.toString()} className={styles.link}>
                     <DesignCard
                         key={card.id ?? `${card.title}-${idx}`}
                         cardName={card.title}

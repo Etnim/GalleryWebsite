@@ -1,8 +1,13 @@
-import { func } from "prop-types";
 import { projects } from "../assets/data.json";
 
 const assetsPath = '../assets/works';
 const media = import.meta.glob('../assets/works/**/*.{png,jpg,jpeg,webp,avif,gif,svg,mp4,webm}', { eager: true, import: 'default' });
+
+const projectsById = new Map(
+  projects.map((project) => [
+    Number(project.id),
+    project])
+);
 
 export function getAllProjects() {
     return projects.map(project => {
@@ -16,14 +21,15 @@ export function getAllProjects() {
  */
 export function getProjectById(id) {
     const mediaFolder = _getMediaFolderPath(id);
-    const projectData = _getProjectData(id);
+    const projectData = projectsById.get(Number(id));
+
+    if (!projectData) return null;
 
     return {
         'id': projectData.id,
         'title': projectData.title,
         'listOfTags': projectData.listOfTags,
         'cover': _getCover(mediaFolder, projectData),
-        'description': projectData.description,
     };
 }
 
@@ -32,7 +38,10 @@ export function getProjectById(id) {
  * @returns
  */
 export function _getMediaFolderPath(id) {
-    return assetsPath + '/work' + id;
+    const base = import.meta.env.BASE_URL;
+    //TODO add src when locally
+   return assetsPath + '/work' + id;
+
 }
 
 /**
@@ -40,29 +49,29 @@ export function _getMediaFolderPath(id) {
  * @returns - json object for project
  */
 function _getProjectData(id) {
-    return projects.find(project => project.id === parseInt(id));
+    return projectsById.get(Number(id)) || null;
 }
 
 export function getProjectDetailsPageMedia(id) {
-    const projectData = _getProjectData(id);
-    return projectData.detailsMedia;
+  const projectData = _getProjectData(id);
+  return (projectData.detailsMedia || []).filter(Boolean);
 }
 
-export function _isImage(mediaName) {
-    return mediaName.endsWith("png" || "jpg" || "jpeg" || "webp" || "avif" || "gif" || "svg");
+export function _isImage(name = '') {
+  return /\.(png|jpe?g|webp|avif|gif|svg)$/i.test(name);
 }
 
-export function _isVideo(mediaName) {
-    return mediaName.endsWith("mp4" || "webm");
+export function _isVideo(name = '') {
+  return /\.(mp4|webm)$/i.test(name);
 }
 
-export function _isLink(mediaName) {
-    return mediaName.startsWith("http" || "www");
+export function _isLink(name = '') {
+  return /^https?:\/\//i.test(name) || /^www\./i.test(name);
 }
 
 function _getCover(mediaFolder, projectData) {
     if (projectData.coverType === 'video') {
-        return _getVideoElement(mediaFolder, projectData.coverPoster, projectData.coverVideo);
+        return _getVideoElement(mediaFolder, projectData.coverVideo);
     }
     if (projectData.coverType === 'image') {
         return _getImageElement(mediaFolder, projectData.coverPoster);
@@ -70,17 +79,16 @@ function _getCover(mediaFolder, projectData) {
     return null;
 }
 
-function _getVideoElement(mediaFolder, posterFileName, videoFileName) {
+function _getVideoElement(mediaFolder, videoFileName) {
     return {
         'type': 'video',
-        'poster': _getMediaPath(mediaFolder, posterFileName),
         'src': _getMediaPath(mediaFolder, videoFileName),
         'autoPlay': true,
         'muted': true,
         'loop': true,
         'playsInline': true,
         'controls': false,
-        'preload': 'metadata',
+        'preload': 'none',
     }
 }
 
@@ -88,12 +96,10 @@ export function _getImageElement(mediaFolder, posterFileName) {
     return {
         'type': 'image',
         'src': _getMediaPath(mediaFolder, posterFileName),
-        'alt': null,
-        'loading': 'lazy',
     }
 }
 
 export function _getMediaPath(mediaFolder, fileName) {
-    const path = mediaFolder + '/' + fileName;
-    return media[path] || null;
+   const path = mediaFolder + '/' + fileName;
+   return media[path] || null;
 }
