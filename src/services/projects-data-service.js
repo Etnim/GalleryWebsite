@@ -99,6 +99,29 @@ export function _getImageElement(mediaFolder, posterFileName) {
     }
 }
 
+export function _getTagClassName(tag) {
+    if (!tag) return 'tagDefault';
+
+    const allowedTags = [
+        'Animation',
+        'Art',
+        'Branding',
+        'infographic',
+        'Logotype',
+        'Packaging',
+        'Photography',
+        'Print',
+        'Typography',
+        'UIUX'
+    ];
+
+    if(allowedTags.includes(tag)) {
+        return 'tag' + tag;
+    }
+
+    return 'tagDefault';
+}
+
 export function _getMediaPath(mediaFolder, fileName) {
    const path = mediaFolder + '/' + fileName;
    return media[path] || null;
