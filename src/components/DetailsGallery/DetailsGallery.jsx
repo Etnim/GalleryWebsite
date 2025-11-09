@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import styles from "./DetailsGallery.module.css";
 import {
     _getMediaFolderPath,
-    getProjectById,
+    getDetailsPageProjectDataById,
     getProjectDetailsPageMedia,
     _isImage,
     _isLink,
@@ -11,7 +11,7 @@ import {
 } from '../../services/projects-data-service.js';
 
 function DetailsGallery({ id }) {
-    const project = getProjectById(id);
+    const project = getDetailsPageProjectDataById(id);
     const detailsMedia = getProjectDetailsPageMedia(id);
     const mediaFolder = _getMediaFolderPath(id);
     return (

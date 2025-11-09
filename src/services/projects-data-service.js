@@ -11,7 +11,7 @@ const projectsById = new Map(
 
 export function getAllProjects() {
     return projects.map(project => {
-        return getProjectById(project.id);
+        return getHomePageProjectDataById(project.id);
     })
 }
 
@@ -19,7 +19,7 @@ export function getAllProjects() {
  * @param {number} id 
  * @returns 
  */
-export function getProjectById(id) {
+export function getHomePageProjectDataById(id) {
     const mediaFolder = _getMediaFolderPath(id);
     const projectData = projectsById.get(Number(id));
 
@@ -30,6 +30,23 @@ export function getProjectById(id) {
         'title': projectData.title,
         'listOfTags': projectData.listOfTags,
         'cover': _getCover(mediaFolder, projectData),
+    };
+}
+
+/**
+ * @param {number} id 
+ * @returns 
+ */
+export function getDetailsPageProjectDataById(id) {
+    const projectData = projectsById.get(Number(id));
+
+    if (!projectData) return null;
+
+    return {
+        'id': projectData.id,
+        'title': projectData.title,
+        'listOfTags': projectData.listOfTags,
+        'description': projectData.description
     };
 }
 

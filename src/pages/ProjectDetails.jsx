@@ -1,5 +1,5 @@
 import { Outlet, useParams } from "react-router-dom";
-import { getProjectById } from '../services/projects-data-service.js';
+import { getDetailsPageProjectDataById } from '../services/projects-data-service.js';
 import DetailsGallery from "../components/DetailsGallery/DetailsGallery";
 import styles from "../components/DetailsGallery/DetailsGallery.module.css";
 import TagList from "../components/TagList/TagList.jsx";
@@ -7,7 +7,7 @@ import TagList from "../components/TagList/TagList.jsx";
 const ProjectDetails = () => {
     const { id } = useParams();
     const numericId = Number(id);
-    const project = getProjectById(numericId);
+    const project = getDetailsPageProjectDataById(numericId);
 
     return (
         <div className={styles.detailsContainer}>
