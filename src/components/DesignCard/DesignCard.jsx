@@ -12,16 +12,14 @@ export default function DesignCard({
                 {cover.type === 'video' ? (
                     <video
                         className={styles.media}
-                        poster={cover.poster || undefined}
                         autoPlay={!!cover.autoPlay}
                         muted={!!cover.muted}
                         loop={!!cover.loop}
                         playsInline={cover.playsInline !== false}
                         controls={!!cover.controls}
-                        preload={cover.preload || 'metadata'}
+                        preload={cover.preload || 'none'}
                     >
                         {cover.src && <source src={cover.src} />}
-                        {cover.sources?.map(s => <source key={s.src} src={s.src} type={s.type} />)}
                         Sorry, your browser doesn’t support embedded videos.
                     </video>
                 ) :
@@ -29,7 +27,7 @@ export default function DesignCard({
                         <img
                             className={styles.media}
                             src={cover.src}
-                            alt={cover.alt || `Image of ${cardName}`}
+                            alt={`Image of ${cardName}`}
                             loading="lazy"
                         />
                     )
