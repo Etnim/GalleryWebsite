@@ -25,8 +25,9 @@
 
 .tagList li {
   font-size-adjust: 0.7;
+  font-family: Arial;
   font-size: 0.6rem;
-  padding: 0.1rem, 0.5rem;
+  padding: 0.1rem 0.6rem;
   color: black;
 }
 
