@@ -9,6 +9,10 @@
     text-align: center;
 }
 
+.descriptionDetails{
+    font-family: Larken-Extra-Bold;
+}
+
 .textContainer{
     margin: 10;
 }
@@ -19,6 +23,15 @@
 
 .title{
     font-size: 100px;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+li {
+    margin: 0.5rem;
 }
 
 .description{

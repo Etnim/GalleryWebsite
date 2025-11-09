@@ -14,6 +14,10 @@ const ProjectDetails = () => {
             <div className={styles.textContainer}>
                 <h1 className={styles.title}>{project?.title}</h1>
                 <p className={styles.description}>{project?.description}</p>
+                <ul>
+                    <li><b className={styles.descriptionDetails} >Year: </b> {project?.year}</li>
+                    <li><b className={styles.descriptionDetails} > Client: </b> {project?.client}</li>
+                </ul>
                 <TagList tags={project.listOfTags}/>
             </div>
             <DetailsGallery id={Number(id)} />
