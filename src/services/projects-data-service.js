@@ -46,7 +46,9 @@ export function getDetailsPageProjectDataById(id) {
         'id': projectData.id,
         'title': projectData.title,
         'listOfTags': projectData.listOfTags,
-        'description': projectData.description
+        'description': projectData.description,
+        'client': projectData.client,
+        'year': projectData.year
     };
 }
 
