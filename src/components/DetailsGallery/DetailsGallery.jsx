@@ -40,6 +40,12 @@ function DetailsGallery({ id }) {
                                     className={styles.media}
                                     key={index}
                                     src={src}
+                                    autoPlay= {true}
+                                    muted= {true}
+                                    loop={true}
+                                    playsInline={true}
+                                    controls={false}
+                                    preload= {'none'}
                                 />
                             );
                         }
