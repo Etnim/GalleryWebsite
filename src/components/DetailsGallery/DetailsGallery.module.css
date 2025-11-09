@@ -15,6 +15,7 @@
 
 .textContainer{
     margin: 10;
+    align-items: center;
 }
 
 .mediaContainer{
@@ -30,8 +31,16 @@ ul {
     font-size: 20px;
 }
 
-li {
-    margin: 0.5rem;
+#descriptionClient{
+    font-family: Larken-Medium;
+    background-color: white;
+    color: black;
+}
+
+#descriptionYear{
+    font-family: Larken-Medium;
+    background-color: white;
+    color: black;
 }
 
 .description{
