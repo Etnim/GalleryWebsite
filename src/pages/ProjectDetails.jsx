@@ -15,8 +15,8 @@ const ProjectDetails = () => {
                 <h1 className={styles.title}>{project?.title}</h1>
                 <p className={styles.description}>{project?.description}</p>
                 <ul>
-                    <li><b className={styles.descriptionDetails} >Year: </b> {project?.year}</li>
-                    <li><b className={styles.descriptionDetails} > Client: </b> {project?.client}</li>
+                    <li><b className={styles.descriptionDetails} > Year: </b> <b id={styles.descriptionYear}>{project?.year}</b> </li>
+                    <li><b className={styles.descriptionDetails} > Client: </b> <b id={styles.descriptionClient}>{project?.client}</b> </li>
                 </ul>
                 <TagList tags={project.listOfTags}/>
             </div>

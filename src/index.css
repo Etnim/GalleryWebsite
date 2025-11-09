@@ -8,6 +8,11 @@
   src: url("./fonts/fonnts.com-Larken_ExtraBold.otf") format("truetype");
 }
 
+@font-face {
+  font-family: Larken-Medium;
+  src: url("./fonts/fonnts.com-Larken_Medium.otf") format("truetype");
+}
+
 body {
   background-color: black;
   color: white;
