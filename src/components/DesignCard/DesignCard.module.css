@@ -32,47 +32,43 @@
 }
 
 .tagAnimation {
-  background-color: #db15ce;
+  background-color: #bf2b5d;
 }
 
 .tagArt {
-  background-color: #1fdb15;
+  background-color: #42aa9c;
 }
 
-.tagBranding {
-  background-color: #db6815;
+.tagIdentity {
+  background-color: #bf9b74;
 }
 
 .tagInfographic {
-  background-color: #158cdb;
+  background-color: #7488bf;
 }
 
-.tagLogotype {
-  background-color: #15db7f;
+.tagLogo {
+  background-color: #7da354;
 }
 
 .tagPackaging {
-  background-color: #db1515;
+  background-color: #ae79b2;
 }
 
-.tagPhotography {
-  background-color: #dbd815;
+.tagExposition{
+  background-color: #aaaaaa;
 }
 
 .tagPrint {
-  background-color: #a0db15;
+  background-color: #ad9b4e;
 }
 
 .tagTypography {
-  background-color: #15dbc4;
+  background-color: #dbc015;
 }
 
 .tagUIUX {
-  background-color: #5e15db;
-}
-
-.tagInfographic{
-  background-color: #158cdb;
+  background-color: #0044d8;
 }
 
 .card:hover {

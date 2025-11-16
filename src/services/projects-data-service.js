@@ -126,17 +126,20 @@ export function _getTagClassName(tag) {
     const allowedTags = [
         'Animation',
         'Art',
-        'Branding',
-        'infographic',
-        'Logotype',
+        'Identity',
+        'Infographic',
+        'Logo',
         'Packaging',
-        'Photography',
+        'Exposition',
         'Print',
         'Typography',
-        'UIUX'
+        'UI/UX'
     ];
 
     if(allowedTags.includes(tag)) {
+        if(tag === 'UI/UX'){
+            return 'tag'+'UIUX'
+        }
         return 'tag' + tag;
     }
 

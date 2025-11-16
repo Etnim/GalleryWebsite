@@ -6,7 +6,7 @@
             "description": "Infineon Technologies is a German microchip manufacturer. A multi-billion dollar company with a very outdated visual identity. I decided to change that in by gratest project so far. Let us welcome to the world the newly refined, reimagined and redesigned Infineon.",
             "coverType": "video",
             "coverVideo": "Infineon_cover_animation.mp4",
-            "listOfTags": ["Identity", "Logo","Packaging", "Animation"],
+            "listOfTags": ["Identity", "Logo", "Packaging", "Animation"],
             "detailsMedia": ["Infineon_Microchip Glowing GIF.gif", "Infineon_Undeniable Performance.png", "Infineon_Main Logo Animation.mp4","Infineon_1st Split.mp4", "Infineon_Lights On.png", "Infineon_2nd Split.mp4", "Infineon_Packaging Alpha.png", "Infineon_Truck.png", "Infineon_BusinessCard.png", "Infineon_CityPosters.png", "Infineon_AppWebsite.png", "Infineon_Flag.png", "Infineon_World.png"],
             "client": "Infineon Technologies",
             "year": "2024"
@@ -26,11 +26,11 @@
         {
             "id": 3,
             "title": "Monkey Dream",
-            "description": "Self-limiting yourself in design is a neat practice for coming up with unexpected ideas and results. This is how Monkey Dream was born. An artbook designed using photos of digital and physical experimentaion with different ways to communicate the idea of a banana. And yes, it was very fun.",
+            "description": "Self-limiting yourself in design is a neat practice for coming up with unexpected ideas and results. This is how Monkey Dream was born. An artbook designed using Expositions of digital and physical experimentaion with different ways to communicate the idea of a banana. And yes, it was very fun.",
             "detailsMedia": ["Title Cover.jpg", "1st spread.jpg", "2nd spread.jpg", "3rd spread.jpg", "Backside Cover.jpg"],
             "coverType": "image",
             "coverPoster": "MonkeyDreamCompressed_image_cover.jpg",
-            "listOfTags": ["Art", "Print", "Photography"],
+            "listOfTags": ["Art", "Print", "Exposition"],
             "altText": "Monkey Dream project cover image",
             "client": "CalArts Design Course",
             "year": "2025"
@@ -42,7 +42,7 @@
             "detailsMedia": [""],
             "coverType": "image",
             "coverPoster": "cover.png",
-            "listOfTags": ["Infographic", "Photography"],
+            "listOfTags": ["Infographic", "Exposition"],
             "altText": "Monkey Dream project cover image",
             "client": "Vilnius Academy of Arts",
             "year": "2024"
@@ -90,7 +90,7 @@
             "detailsMedia": ["Exposition_Angle_Main_Mockup.png", "Exposition Angle Secondary.png", "Prussian Museum Book Mockup.png", "Prussian Museum Stand Mockup.png", "Prussian Museum Banner Mockup.png"],
             "coverType": "image",
             "coverPoster": "PCM_cover_image.png",
-            "listOfTags": ["Branding", "Logotype", "Exposition"],
+            "listOfTags": ["Identity", "Logo", "Exposition"],
             "altText": "Monkey Dream project cover image",
             "client": "Prussian Culture Museum",
             "year": "2025"
@@ -114,7 +114,7 @@
             "detailsMedia": [""],
             "coverType": "video",
             "coverVideo": "Favelagrafia_cover_video.mp4",
-            "listOfTags": ["Animation", "Art", "Typography", "Photography"],
+            "listOfTags": ["Animation", "Art", "Typography", "Exposition"],
             "altText": "Monkey Dream project cover image",
             "client": "Favelagrafia",
             "year": "2024"
@@ -126,7 +126,7 @@
             "detailsMedia": ["Veles_PatternDesign.png", "Veles_BottleClose-UP.jpg", "Veles_BottleTilted", "Veles_PackageBox.jpg"],
             "coverType": "video",
             "coverVideo": "Holy_cover_animation.mp4",
-            "listOfTags": [ "Branding","Logotype", "Animation", "Print"],
+            "listOfTags": [ "Identity","Logo", "Animation", "Print"],
             "altText": "Monkey Dream project cover image",
             "client": "Myself",
             "year": "2025"
@@ -174,7 +174,7 @@
             "detailsMedia": ["Terraform Logo Animation MP4.mp4", "Hero Page.jpg", "Our Vision and Philosophy.jpg", "Terraform Eco-Driven Tiles MP4.mp4", "Our Latest Design Projects 2.jpg", "Statistics.jpg", "Footer 1.jpg"],
             "coverType": "image",
             "coverPoster": "Terraform Cover Image Square Compressed.jpg",
-            "listOfTags": ["Branding", "Logotype", "UI/UX"],
+            "listOfTags": ["Identity", "Logo", "UI/UX"],
             "altText": "Monkey Dream project cover image",
             "client": "Terraform",
             "year": "2024"
@@ -187,7 +187,7 @@
             "detailsMedia": [""],
             "coverType": "image",
             "coverPoster": "Kill Your Friends 2 Compressed.png",
-            "listOfTags": ["Art", "Print", "Photography"],
+            "listOfTags": ["Art", "Print", "Exposition"],
             "altText": "Monkey Dream project cover image",
             "client": "Rose and Concrete",
             "year": "2024"
