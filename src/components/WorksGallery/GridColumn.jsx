@@ -4,11 +4,12 @@ import styles from "./WorksGallery.module.css";
 import DesignCard from "../DesignCard/DesignCard";
 import { Link } from 'react-router-dom';
 
-const GridColumn = React.forwardRef(function GridColumn({ cards, className }, ref) {
+const GridColumn = React.forwardRef(function GridColumn({ cards, idName }, ref) {
     return (
         <div
             ref={ref}
-            className={[styles.gridColumn, className].join(' ')}>
+            className={styles.gridColumn}
+            id={idName}>
             {cards.map((card, idx) => (
                 <Link key={card.id} to={card.id.toString()} className={styles.link}>
                     <DesignCard

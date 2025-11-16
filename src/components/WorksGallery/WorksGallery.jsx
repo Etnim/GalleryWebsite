@@ -14,7 +14,7 @@ const buildColumns = (cards, columns) => {
     return out;
 };
 
-export default function Gallery({listOfCards, columns = 4, columnSpeeds = [1, 3.5, 4, 5] }) {
+export default function Gallery({listOfCards, columns = 4, columnSpeeds = [0.5, 1, 2, 2.3] }) {
     const galleryColumns = useMemo(() => buildColumns(listOfCards, columns), [listOfCards, columns]);
     const containerRef = useRef(null);
     const velocities = useRef(new Array(galleryColumns.length).fill(0));
@@ -73,7 +73,7 @@ export default function Gallery({listOfCards, columns = 4, columnSpeeds = [1, 3.
     return (
         <div className={styles.gallery} ref={containerRef}>
             {galleryColumns.map((cards, i) => (
-                <GridColumn key={i} cards={cards} className={styles[`col${i}`]} />
+                <GridColumn key={i} cards={cards} idName={styles[`col${i}`]} />
             ))}
         </div>
     );
