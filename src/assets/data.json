@@ -3,7 +3,7 @@
         {
             "id": 1,
             "title": "Infineon",
-            "description": "Infineon Technologies is a German microchip manufacturer. A multi-billion dollar company with a very outdated visual identity. I decided to change that in by gratest project so far. Let us welcome to the world the newly refined, reimagined and redesigned Infineon.",
+            "description": "Infineon Technologies is a German microchip manufacturer. A multi-billion dollar company with a very outdated visual identity. I decided to change that in my greatest project so far. Let us welcome to the world the newly refined, reimagined and redesigned Infineon.",
             "coverType": "video",
             "coverVideo": "Infineon_cover_animation.mp4",
             "listOfTags": ["Identity", "Logo", "Packaging", "Animation"],
@@ -14,23 +14,23 @@
         {
             "id": 2,
             "title": "Zephyr",
-            "description": "Dopamine nowadays is a largely abused neurochemical. It is getting harder and harder to find motivation in a world designed around instant pleasures. Zephyr is hopeful attempt to push the people towards reconnecting with themselves. Becoming mindful of the world inside you and around you. Just breathe.",
+            "description": "Dopamine nowadays is a largely abused neurochemical. It is getting harder and harder to find motivation in a world designed around instant pleasures. Zephyr is a hopeful attempt to push the people towards reconnecting with themselves. Becoming mindful of the world inside you and around you. Just breathe.",
             "coverType": "image",
             "coverPoster": "Zephyr_cover_image.jpg",
             "listOfTags": ["Identity", "Logo", "Animation", "UI/UX"],
             "altText": "Zephyr project cover image",
-            "detailsMedia": ["Zephyr Logo Animation Color Fixed.mp4", "Zephyr_Sketch Mockup.jpg", "App Logo Mockup.jpg","Zephyr Wireframes.jpg", "Behance Designs Onboarding Screen.jpg", "Behance Designs Home Screen.jpg", "Behance Designs Landing Screens.jpg", "Behance Designs In-Depth Screen.jpg", "Zephyr_Title.jpg"],
+            "detailsMedia": ["Zephyr Logo Animation Color Fixed.mp4", "Zephyr_Sketch Mockup.jpg", "Zephyr - Main Logo Animation.mp4", "App Logo Mockup.jpg","Zephyr Wireframes.jpg", "Behance Designs Onboarding Screen.jpg", "Behance Designs Home Screen.jpg", "Behance Designs Landing Screens.jpg", "Behance Designs In-Depth Screen.jpg", "Zephyr_Title.jpg"],
             "client": "Zephyr",
             "year": "2024"
         },
         {
             "id": 3,
             "title": "Monkey Dream",
-            "description": "Self-limiting yourself in design is a neat practice for coming up with unexpected ideas and results. This is how Monkey Dream was born. An artbook designed using Expositions of digital and physical experimentaion with different ways to communicate the idea of a banana. And yes, it was very fun.",
+            "description": "Self-limiting yourself in design is a neat practice for coming up with unexpected ideas and results. This is how Monkey Dream was born. A mini-artbook designed using expositions of digital and physical experimentaion with different ways to communicate the idea of a banana. And yes, it was very fun.",
             "detailsMedia": ["Title Cover.jpg", "1st spread.jpg", "2nd spread.jpg", "3rd spread.jpg", "Backside Cover.jpg"],
             "coverType": "image",
             "coverPoster": "MonkeyDreamCompressed_image_cover.jpg",
-            "listOfTags": ["Art", "Print", "Exposition"],
+            "listOfTags": ["Art", "Print"],
             "altText": "Monkey Dream project cover image",
             "client": "CalArts Design Course",
             "year": "2025"
@@ -38,11 +38,11 @@
         {
             "id": 4,
             "title": "Riot-Related Injuries",
-            "description": "A cutting-edge project focused on AI development.",
-            "detailsMedia": [""],
+            "description": "Less lethal weapons - a term used for police weapons employed in anti-riot activities. Its original design was to minimize the damage dealt to protesters when dispersing the crowd, while still being an effective tool. However more often they deal serious injuries like cuts, fractures and lacerations. This project relies on real-life protest injuries data from Lebanese protests and visualizes the most common injuries in an experimental bar chart.",
+            "detailsMedia": ["Frame 1.jpg", "Frame 2.jpg", "Frame 3.jpg", "Frame 4.jpg", "Frame 6.jpg", "Frame 7.jpg", "Frame 8.jpg", "Frame 10.jpg"],
             "coverType": "image",
             "coverPoster": "cover.png",
-            "listOfTags": ["Infographic", "Exposition"],
+            "listOfTags": ["Infographic", "Art"],
             "altText": "Monkey Dream project cover image",
             "client": "Vilnius Academy of Arts",
             "year": "2024"
@@ -86,8 +86,8 @@
         {
             "id": 8,
             "title": "Prussian Culture Museum",
-            "description": "Prussian heritage was viciously erased after the WW1 and WW2. Language just barely survived and spoken by very few. As a result of collaboration with Prussian Community of Lithuania on historical matters and Vilnius Academy of Arts on design aspects, we attempted to conceptualize how could Prussian Culture Museum look like. ",
-            "detailsMedia": ["Exposition_Angle_Main_Mockup.png", "Exposition Angle Secondary.png", "Prussian Museum Book Mockup.png", "Prussian Museum Stand Mockup.png", "Prussian Museum Banner Mockup.png"],
+            "description": "Prussian heritage was viciously erased after the WW1 and WW2. Language just barely survived and is now spoken by very few. As a result of collaboration with Prussian Community of Lithuania on historical matters and Vilnius Academy of Arts on design aspects, we attempted to conceptualize how could a modern Prussian Culture Museum look like in Klaipeda, Lithuania. ",
+            "detailsMedia": ["Exposition_Angle_Main_Mockup.png", "Exposition Angle Secondary.png", "PCM - Main Logo Animation.mp4", "Prussian Museum Book Mockup.png", "Prussian Museum Stand Mockup.png", "Prussian Museum Banner Mockup.png"],
             "coverType": "image",
             "coverPoster": "PCM_cover_image.png",
             "listOfTags": ["Identity", "Logo", "Exposition"],
@@ -109,12 +109,12 @@
         },
         {
             "id": 10,
-            "title": "Duality of Favelas",
-            "description": "A cutting-edge project focused on AI development.",
+            "title": "Favelagrafia",
+            "description": "“Favelagrafia” is an art group of 9 Brazilian artists, pro and amateur, originating from favelas. Their goal is to break the stereotypical representation of favelas as vile and dangerous places, to show that they are full of talented, creative people. My project manipulates their imagery to create a dichotomy between the stereotypical, “classical” representations of favelas and the cultural, artistic ones.",
             "detailsMedia": [""],
             "coverType": "video",
             "coverVideo": "Favelagrafia_cover_video.mp4",
-            "listOfTags": ["Animation", "Art", "Typography", "Exposition"],
+            "listOfTags": ["Animation", "Art", "Typography"],
             "altText": "Monkey Dream project cover image",
             "client": "Favelagrafia",
             "year": "2024"
@@ -122,8 +122,8 @@
         {
             "id": 11,
             "title": "Holy",
-            "description": "A cutting-edge project focused on AI development.",
-            "detailsMedia": ["Veles_PatternDesign.png", "Veles_BottleClose-UP.jpg", "Veles_BottleTilted", "Veles_PackageBox.jpg"],
+            "description": "A never-ending quest of distilling my own identity. “HOLY” is an attempt to identify the depths of who I am, then try to transcend it in visual form. What started as a childish nickname to be represented by in video games, has evolved into a visual identity title. (Currently work in progress)",
+            "detailsMedia": ["Textured Logo 1.png"],
             "coverType": "video",
             "coverVideo": "Holy_cover_animation.mp4",
             "listOfTags": [ "Identity","Logo", "Animation", "Print"],
@@ -135,7 +135,7 @@
             "id": 12,
             "title": "Shameless Snacks",
             "description": "Sugar is quite difficult not to crave. Expecially when there are so many candies, deserts, cakes and other sweet miracles around. Shameless Snacks wanted to allow people to indulge in their sweet desires while not compromising on health. As a part of a test task, they asked me to develop email design, social media post and social media animation for their product.",
-            "detailsMedia": ["ShamelessSnacks _cover_image.jpg", "EMAIL DESIGN.jpg", "FULL COMPOSITION.mp4", "SOCIAL MEDIA DESIGN.jpg"],
+            "detailsMedia": ["INSTA POST Animation.mp4","ShamelessSnacks _cover_image.jpg", "EMAIL DESIGN.jpg", "INSTA POST.jpg"],
             "coverType": "video",
             "coverVideo": "ShamelessSnacks _cover_video.mp4",
             "listOfTags": ["Animation", "Identity", "Packaging"],
@@ -146,7 +146,7 @@
         {
             "id": 13,
             "title": "Veles",
-            "description": "There are close to none references to paganism in modern Belarus. ",
+            "description": "There are close to none references to paganism in modern Belarus. Ironically, at the time of designing this project I had close to none experience in packaging design. And so I wanted to play with traditional Belarusian patterns and pagan references to the drink that would be symbolic to this region. Just like wine flooded Rome, mead was drank from horns by our forest ancestors.",
             "detailsMedia": ["Veles_PatternDesign.png", "Veles_BottleClose-UP.jpg", "Veles_BottleTilted", "Veles_PackageBox.jpg"],
             "coverType": "image",
             "coverPoster": "Veles_cover_image.png",
@@ -158,8 +158,8 @@
          {
             "id": 14,
             "title": "Aqua 2025",
-            "description": "A cutting-edge project focused on AI development.",
-            "detailsMedia": [""],
+            "description": "AQUA 2025 (or Aquaculture Europe 2025) is the European Aquaculture Society’s congress and trade show featuring scientific sessions, an international exhibition, industry forums, and EU research updates. It also featured E-Poster (Electronic Poster) presentations from scientists and researchers all over Europe. I was responsible for designing such E-Poster for a team of Ukrainian aquatic researchers, investigating the damage done to Ukrainian water ecosystems as a result of war.",
+            "detailsMedia": ["AQUA double slide.jpg","Aqua 2025 Poster.jpg"],
             "coverType": "image",
             "coverPoster": "Aqua 2025 - Cover Image.jpg",
             "listOfTags": ["Infographic", "Print"],
@@ -174,7 +174,7 @@
             "detailsMedia": ["Terraform Logo Animation MP4.mp4", "Hero Page.jpg", "Our Vision and Philosophy.jpg", "Terraform Eco-Driven Tiles MP4.mp4", "Our Latest Design Projects 2.jpg", "Statistics.jpg", "Footer 1.jpg"],
             "coverType": "image",
             "coverPoster": "Terraform Cover Image Square Compressed.jpg",
-            "listOfTags": ["Identity", "Logo", "UI/UX"],
+            "listOfTags": ["Identity", "Logo", "UI/UX", "Animation"],
             "altText": "Monkey Dream project cover image",
             "client": "Terraform",
             "year": "2024"
@@ -183,14 +183,14 @@
          {
             "id": 16,
             "title": "Kill Your Friends",
-            "description": "A cutting-edge project focused on AI development.",
-            "detailsMedia": [""],
+            "description": "A song cover design done for my friend's music band Rose and Concrete.",
+            "detailsMedia": ["Kill Your Friends Vinyl Mockup.jpg"],
             "coverType": "image",
             "coverPoster": "Kill Your Friends 2 Compressed.png",
             "listOfTags": ["Art", "Print", "Exposition"],
             "altText": "Monkey Dream project cover image",
             "client": "Rose and Concrete",
-            "year": "2024"
+            "year": "2023"
         }
     ]
 }
