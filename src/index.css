@@ -13,6 +13,10 @@
   src: url("./fonts/fonnts.com-Larken_Medium.otf") format("truetype");
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   background-color: black;
   color: white;
