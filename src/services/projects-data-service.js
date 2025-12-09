@@ -81,8 +81,6 @@ export function _isImage(name = '') {
 }
 
 export function _isVideo(name = '') {
-
-    console.log("Is video: ",  /\.(mp4|webm)$/i.test(name))
   return /\.(mp4|webm)$/i.test(name);
 }
 
