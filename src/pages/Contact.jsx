@@ -1,5 +1,5 @@
 import styles from '../styles/AboutContactPages.module.css';
-import contactImage from '../assets/ContactPage.gif';
+import contactImage from '../assets/contactPage.gif';
 import linkedIn from "../../public/LinkedInicon.png";
 
 export default function Contact() {
