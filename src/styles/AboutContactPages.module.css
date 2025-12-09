@@ -1,0 +1,45 @@
+.aboutPageDrawing {
+  height: auto;
+  width: 50%;
+}
+
+.title{
+    text-align: center;
+    font-size: 100px;
+    margin: 0;
+}
+
+.textContainer{
+    font-size: 30px;
+    text-align: center;
+    padding: 0;
+}
+
+.pageContainer{
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: Larken-Thin, sans-serif;
+}
+
+.twoColumnLayout{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftColumn{
+    flex: 1; 
+    list-style: none;
+    margin: 0;
+    gap: 2rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.icon {
+    height: 25px;
+    object-fit: contain;
+}
