@@ -4,9 +4,9 @@ const assetsPath = '../assets/works';
 const media = import.meta.glob('../assets/works/**/*.{png,jpg,jpeg,webp,avif,gif,svg,mp4,webm}', { eager: true, import: 'default' });
 
 const projectsById = new Map(
-  projects.map((project) => [
-    Number(project.id),
-    project])
+    projects.map((project) => [
+        Number(project.id),
+        project])
 );
 
 export function getAllProjects() {
@@ -59,7 +59,7 @@ export function getDetailsPageProjectDataById(id) {
 export function _getMediaFolderPath(id) {
     const base = import.meta.env.BASE_URL;
     //TODO add src when locally
-   return assetsPath + '/work' + id;
+    return assetsPath + '/work' + id;
 
 }
 
@@ -72,20 +72,20 @@ function _getProjectData(id) {
 }
 
 export function getProjectDetailsPageMedia(id) {
-  const projectData = _getProjectData(id);
-  return (projectData.detailsMedia || []).filter(Boolean);
+    const projectData = _getProjectData(id);
+    return (projectData.detailsMedia || []).filter(Boolean);
 }
 
 export function _isImage(name = '') {
-  return /\.(png|jpe?g|webp|avif|gif|svg)$/i.test(name);
+    return /\.(png|jpe?g|webp|avif|gif|svg)$/i.test(name);
 }
 
 export function _isVideo(name = '') {
-  return /\.(mp4|webm)$/i.test(name);
+    return /\.(mp4|webm)$/i.test(name);
 }
 
 export function _isLink(name = '') {
-  return /^https?:\/\//i.test(name) || /^www\./i.test(name);
+    return /^https?:\/\//i.test(name) || /^www\./i.test(name);
 }
 
 function _getCover(mediaFolder, projectData) {
@@ -134,9 +134,9 @@ export function _getTagClassName(tag) {
         'UI/UX'
     ];
 
-    if(allowedTags.includes(tag)) {
-        if(tag === 'UI/UX'){
-            return 'tag'+'UIUX'
+    if (allowedTags.includes(tag)) {
+        if (tag === 'UI/UX') {
+            return 'tag' + 'UIUX'
         }
         return 'tag' + tag;
     }
@@ -145,6 +145,19 @@ export function _getTagClassName(tag) {
 }
 
 export function _getMediaPath(mediaFolder, fileName) {
-   const path = mediaFolder + '/' + fileName;
-   return media[path] || null;
+    const path = mediaFolder + '/' + fileName;
+    return media[path] || null;
+}
+
+export function _isWistia(name = '') {
+    return /wistia\.com|wistia\.net/i.test(name);
+}
+
+export function _getWistiaEmbedUrl(url) {
+    const match = url.match(/(?:medias|iframe)\/([a-zA-Z0-9]+)/);
+
+    if (!match) return null;
+
+    const mediaId = match[1];
+    return `https://fast.wistia.net/embed/iframe/${mediaId}`;
 }

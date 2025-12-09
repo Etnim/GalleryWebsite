@@ -8,6 +8,8 @@ import {
     _isLink,
     _isVideo,
     _getMediaPath,
+    _isWistia,
+    _getWistiaEmbedUrl
 } from '../../services/projects-data-service.js';
 
 function DetailsGallery({ id }) {
@@ -51,15 +53,18 @@ function DetailsGallery({ id }) {
                         }
 
                         if (_isLink(mediaName)) {
+                            const url = _isWistia(mediaName) ? _getWistiaEmbedUrl(mediaName) : mediaName;
+                            console.log({ url });
+
                             return (
-                                <iframe
-                                    className={styles.media}
-                                    key={index}
-                                    src={mediaName}
-                                    frameBorder="0"
-                                    allow="autoplay; encrypted-media"
-                                    allowFullScreen
-                                ></iframe>
+                                <div className={styles.wistiaBox} key={index}>
+                                    <iframe
+                                        className={styles.media}
+                                        key={index}
+                                        src={url + "?autoPlay=1&mute=1&loop=true&&controlsVisibleOnLoad=0&smallPlayButton=false&bigPlayButton=true&fullscreenButton=false&playbar=false&videoFoam=true"}
+                                        allow="autoplay; fullscreen"
+                                    ></iframe>
+                                </div>
                             );
                         }
                     }))
