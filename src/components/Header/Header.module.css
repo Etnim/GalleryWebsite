@@ -27,9 +27,6 @@
 }
 
 .navbar a {
-    position: relative;
-    display: inline-block;
-    padding: 0 1rem;
     color: white;
     text-decoration: none;
     background: none;
@@ -45,6 +42,7 @@
 }
 
 .navbar #logo {
+    margin-left: 4%;
     height: 2.5rem;
 }
 
