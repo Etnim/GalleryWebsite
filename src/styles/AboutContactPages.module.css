@@ -37,6 +37,10 @@
     gap: 2rem;
 }
 
+b {
+    text-decoration: underline;
+}
+
 a {
     color: white;
     text-decoration: none;
