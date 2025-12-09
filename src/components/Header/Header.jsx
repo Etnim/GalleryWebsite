@@ -9,7 +9,6 @@ function Header() {
                 <ul>
                     <Link to="/GalleryWebsite/contact/"><li>CONTACT</li></Link>
                     <Link to="/GalleryWebsite/about/"><li>ABOUT</li></Link>
-                    <Link to="https://www.linkedin.com/in/ignat-voronovich-313951241/"> <li><img src={"LinkedInicon.png"}></img></li></Link>
                 </ul>
             </nav>
         </header>
