@@ -10,15 +10,17 @@
 }
 
 .textContainer{
-    font-size: 30px;
     text-align: center;
     padding: 0;
 }
 
 .pageContainer{
+    text-align: center;
     margin-left: 20%;
     margin-right: 20%;
+    font-size: 20px;
     font-family: Larken-Thin, sans-serif;
+    margin-bottom: 5rem;
 }
 
 .twoColumnLayout{
@@ -28,6 +30,7 @@
 }
 
 .leftColumn{
+    text-align: left;
     flex: 1; 
     list-style: none;
     margin: 0;
