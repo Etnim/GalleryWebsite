@@ -1,8 +1,8 @@
-import styles from '../styles/AboutPage.module.css';
+import styles from '../styles/AboutContactPages.module.css';
 import drawing from '../assets/about-page-drawing.jpg';
 
 export default function About(){
-    return <div className={styles.aboutContainer}>
+    return <div className={styles.pageContainer}>
         <h1 className={styles.title}>About</h1>
         <div className={styles.textContainer}>
             <p>Usually this section is meant to describe my professional attitude to design, main inspirations that led me to this path and refined methods of work. Although it might be appropriate for purely “business based” communication, I find it extremely boring.</p>
