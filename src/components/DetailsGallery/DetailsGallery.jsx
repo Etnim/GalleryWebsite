@@ -40,23 +40,26 @@ function DetailsGallery({ id }) {
                                     className={styles.media}
                                     key={index}
                                     src={src}
-                                    autoPlay= {true}
-                                    muted= {true}
+                                    autoPlay={true}
+                                    muted={true}
                                     loop={true}
                                     playsInline={true}
                                     controls={false}
-                                    preload= {'none'}
+                                    preload={'none'}
                                 />
                             );
                         }
 
                         if (_isLink(mediaName)) {
                             return (
-                                <video
+                                <iframe
                                     className={styles.media}
                                     key={index}
                                     src={mediaName}
-                                />
+                                    frameBorder="0"
+                                    allow="autoplay; encrypted-media"
+                                    allowFullScreen
+                                ></iframe>
                             );
                         }
                     }))
