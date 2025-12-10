@@ -23,9 +23,9 @@ body {
   padding: 0;
   margin: 0;
   font-family: Larken-Thin, sans-serif;
-  cursor: url('./assets/cursor.png') 12 12, auto;
+  cursor: url('/cursor.png') 12 12, auto;
 }
 
-a, button, .clickable {
-  cursor: url('./assets/cursor.png') 12 12, pointer;
+a, .clickable {
+  cursor: url('/cursorHover.png') 13 13, pointer;
 }
