@@ -10,6 +10,15 @@
   overflow: hidden;
 }
 
+.footerGallery {
+  margin: 0;
+  font-size: 14px;
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center;     /* centers vertically */
+  width: 100%;
+}
+
 .link {
   text-decoration: none;
   color: inherit;
