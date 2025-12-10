@@ -3,6 +3,7 @@ import { getDetailsPageProjectDataById } from '../services/projects-data-service
 import DetailsGallery from "../components/DetailsGallery/DetailsGallery";
 import styles from "../components/DetailsGallery/DetailsGallery.module.css";
 import TagList from "../components/TagList/TagList.jsx";
+import Footer from "../components/DetailsGallery/Footer.jsx";
 
 const ProjectDetails = () => {
     const { id } = useParams();
@@ -20,7 +21,8 @@ const ProjectDetails = () => {
                 </ul>
                 <TagList tags={project.listOfTags}/>
             </div>
-            <DetailsGallery id={Number(id)} />
+            <DetailsGallery id={numericId} />
+            <Footer id={numericId}/>
             <Outlet />
         </div>
     );

@@ -4,7 +4,7 @@ import linkedIn from "../../public/LinkedInicon.png";
 
 export default function Contact() {
     return <div className={styles.pageContainer}>
-        <h1 className={styles.title}>Contact Page</h1>
+        <h1 className={styles.title}>Contacts</h1>
         <div className={styles.twoColumnLayout}>
             <ul className={styles.leftColumn}>
                 <li>Ignat Voronovich</li>

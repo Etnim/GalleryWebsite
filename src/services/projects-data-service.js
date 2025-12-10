@@ -2,17 +2,21 @@ import { projects } from "../assets/data.json";
 
 const assetsPath = '../assets/works';
 const media = import.meta.glob('../assets/works/**/*.{png,jpg,jpeg,webp,avif,gif,svg,mp4,webm}', { eager: true, import: 'default' });
-
 const projectsById = new Map(
     projects.map((project) => [
         Number(project.id),
         project])
 );
+const worksAmount = projectsById.size;
 
 export function getAllProjects() {
     return projects.map(project => {
         return getHomePageProjectDataById(project.id);
     })
+}
+
+export function getWorksAmount() {
+    return worksAmount;
 }
 
 /**

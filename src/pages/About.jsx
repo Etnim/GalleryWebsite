@@ -12,7 +12,7 @@ export default function About() {
         </div>
         <img src={drawing} className={styles.aboutPageDrawing} />
         <p id={styles.comment}><i>If you wonder how I look like, this is how my girlfriend sees me,
-            by the way, <a href="https://www.linkedin.com/in/anhelina-velychko-56047a240/" target="_blank"><b>she</b></a> is the one who built this website</i>
+            by the way, <a href="https://www.linkedin.com/in/anhelina-velychko-56047a240/" target="_blank"><b id={styles.she}>she</b></a> is the one who built this website</i>
         </p>
     </div>;
 
