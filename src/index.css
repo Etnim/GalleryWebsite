@@ -27,5 +27,5 @@ body {
 }
 
 a, .clickable {
-  cursor: url('/cursorHover.png') 13 13, pointer;
+  cursor: url('/cursor.png') 13 13, pointer;
 }

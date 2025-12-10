@@ -11,12 +11,20 @@
 }
 
 .footerGallery {
+  color: rgb(162, 161, 161);
   margin: 0;
   font-size: 14px;
   display: flex;
-  justify-content: center; /* centers horizontally */
-  align-items: center;     /* centers vertically */
+  justify-content: center;
+  /* centers horizontally */
+  align-items: center;
+  /* centers vertically */
   width: 100%;
+}
+
+.footerGallery b {
+  color: rgb(162, 161, 161);
+  text-decoration: underline;
 }
 
 .link {
