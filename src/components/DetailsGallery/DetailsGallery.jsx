@@ -61,7 +61,17 @@ function DetailsGallery({ id }) {
                                     <iframe
                                         className={styles.media}
                                         key={index}
-                                        src={url + "?autoPlay=1&mute=1&loop=true&&controlsVisibleOnLoad=0&smallPlayButton=false&bigPlayButton=true&fullscreenButton=false&playbar=false&videoFoam=true"}
+                                        src={
+                                            url +
+                                            "?autoPlay=1" +
+                                            "&mute=1" +
+                                            "&loop=1" +
+                                            "&controlsVisibleOnLoad=false" +
+                                            "&smallPlayButton=false" +
+                                            "&bigPlayButton=true" +
+                                            "&playbar=false" +
+                                            "&videoFoam=true"
+                                        }
                                         allow="autoplay; fullscreen"
                                     ></iframe>
                                 </div>
