@@ -6,10 +6,10 @@ function Header() {
     return (
         <header>
             <nav className={styles.navbar}>
-                <Link to="/GalleryWebsite/"><img id={styles.logo} src={logo} /></Link>
+                <Link to="/"><img id={styles.logo} src={logo} /></Link>
                 <ul>
-                    <Link to="/GalleryWebsite/contact/"><li>CONTACT</li></Link>
-                    <Link to="/GalleryWebsite/about/"><li>ABOUT</li></Link>
+                    <Link to="/contact/"><li>CONTACT</li></Link>
+                    <Link to="/about/"><li>ABOUT</li></Link>
                 </ul>
             </nav>
         </header>
