@@ -17,25 +17,40 @@
 
 .pageContainer{
     text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin: 0 15rem;
     font-size: 20px;
     font-family: Larken-Thin, sans-serif;
     margin-bottom: 5rem;
+    text-align: center;
 }
 
 .twoColumnLayout{
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  margin: 4rem 5rem;
+  padding: 0;
 }
 
 .leftColumn{
     text-align: left;
-    flex: 1; 
-    list-style: none;
-    margin: 0;
-    gap: 2rem;
+    flex: 1.2;
+}
+
+.rightColumn{
+  height: auto;
+  flex: 0.8;
+}
+
+ul.contactIcons {
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin-top: 3rem;
+}
+
+#name{
+    font-family: Larken-Medium, sans-serif;
 }
 
 #she{
@@ -48,6 +63,6 @@ a {
 }
 
 .icon {
-    height: 25px;
+    height: 35px;
     object-fit: contain;
 }
