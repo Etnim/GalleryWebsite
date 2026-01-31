@@ -16,7 +16,7 @@ export default function Contact() {
                         target="_blank">
                             <img src={gmail} className={styles.icon} />
                     </a></li>
-                    <li><a href="https://www.linkedin.com/in/ignat-voronovich-313951241/" target="_blank"><img src={linkedIn} className={styles.icon}></img></a></li>
+                    <li><a href="https://www.linkedin.com/in/holygraphics/" target="_blank"><img src={linkedIn} className={styles.icon}></img></a></li>
                 </ul>
             </div>
             <img src={contactImage} className={styles.rightColumn}></img>
