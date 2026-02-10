@@ -8,8 +8,13 @@ const buildColumns = (cards, columns) => {
     const out = Array.from({ length: columns }, () => []);
     let start = 0, i = 0;
     while (i < cards.length) {
-        for (let j = start; j < columns && i < cards.length; j++) out[j].push(cards[i++]);
+        for (let j = start; j < columns && i < cards.length; j++){
+            out[j].push(cards[i++]);
+        }
         start = (start + 1) % columns;
+        if( i % 4 === 0) {
+            start++;
+        }
     }
     return out;
 };
