@@ -1,21 +1,21 @@
 .aboutPageDrawing {
-  height: auto;
-  width: 50%;
+    height: auto;
+    width: 50%;
 }
 
-.title{
+.title {
     text-align: center;
     font-size: 100px;
     margin: 0;
 }
 
-.textContainer{
+.textContainer {
     text-align: center;
     margin-top: 4rem;
     padding: 0;
 }
 
-.pageContainer{
+.pageContainer {
     text-align: center;
     margin: 0 15rem;
     font-size: 20px;
@@ -24,22 +24,22 @@
     text-align: center;
 }
 
-.twoColumnLayout{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 4rem 5rem;
-  padding: 0;
+.twoColumnLayout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 5rem;
+    padding: 0;
 }
 
-.leftColumn{
+.leftColumn {
     text-align: left;
     flex: 1.2;
 }
 
-.rightColumn{
-  height: auto;
-  flex: 0.8;
+.rightColumn {
+    height: auto;
+    flex: 0.8;
 }
 
 ul.contactIcons {
@@ -49,11 +49,11 @@ ul.contactIcons {
     margin-top: 3rem;
 }
 
-#name{
+#name {
     font-family: Larken-Medium, sans-serif;
 }
 
-#she{
+#she {
     text-decoration: underline;
 }
 
@@ -65,4 +65,55 @@ a {
 .icon {
     height: 35px;
     object-fit: contain;
+}
+
+@media (max-width: 800px) {
+    .pageContainer {
+        text-align: center;
+        font-size: 18px;
+        font-family: Larken-Thin, sans-serif;
+        margin: 0 2rem 3rem 2rem;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 50px;
+        margin: 4rem 0 2rem;
+    }
+
+    .twoColumnLayout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .leftColumn {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactIcons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.25rem;
+        padding: 0;
+        margin: 1.75rem 0 0;
+        list-style: none;
+    }
+
+    .rightColumn {
+        width: 100vw;
+        height: 220px;
+
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+
+        display: block;
+    }
 }
