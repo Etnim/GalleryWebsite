@@ -16,9 +16,7 @@
   font-size: 14px;
   display: flex;
   justify-content: center;
-  /* centers horizontally */
   align-items: center;
-  /* centers vertically */
   width: 100%;
 }
 
@@ -55,7 +53,6 @@
   width: 20%;
 }
 
-
 @media (max-width: 800px) {
   .gallery {
     display: flex;
@@ -76,6 +73,6 @@
   #col1,
   #col2,
   #col3 {
-    width: 70% !important;
+    width: 100% !important;
   }
 }
