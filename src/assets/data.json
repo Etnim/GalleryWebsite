@@ -3,7 +3,7 @@
         {
             "id": 1,
             "title": "Infineon",
-            "description": "Infineon Technologies is a German microchip manufacturer. A multi-billion dollar company with a very outdated visual identity. I decided to change that in my greatest project so far. Let us welcome to the world the newly refined, reimagined and redesigned Infineon.",
+            "description": "Infineon did not need reinvention. It needed recalibration. As its influence expanded across industries and continents, the identity required the same clarity and discipline found in its technology. The rebrand strengthens structure, sharpens expression and builds a system designed to scale with its ambition.",
             "coverType": "image",
             "coverPoster": "Infineon Packaging Alpha.png",
             "listOfTags": ["Identity", "Logo", "Packaging", "Animation"],
@@ -39,7 +39,7 @@
             "id": 4,
             "title": "Terraform",
             "description": "Concrete jungles are being built with incredible speed. They replace natural greenery and damage the planet's entire ecosystem. Attemps to preserve the greenery are usually futile. Terraform is a conceptualized architecture bureau promoting biophilic design - merging the humans' necessity for buildings with respect to the ancient presence of nature.  ",
-            "detailsMedia": ["Terraform Logo Animation MP4.mp4", "Project Description Terraform - 1.jpg" , "Terraform Collage.jpg" , "Project Description Terraform - 2.jpg", "Magazine-Mockup-Showcase-3.jpg", "Project Description Terraform - 3.jpg", "Fence_Banner_Mockup_1.jpg", "Terraform_MacBook_HeroPageBlack.png", "Terraform - Main Logo Animation.mp4", "Our Vision and Philosophy.jpg", "Terraform Eco-Driven Tiles MP4.mp4", "Our Latest Design Projects 2.jpg", "Statistics.jpg", "Footer 1.jpg"],
+            "detailsMedia": ["Terraform Logo Animation MP4.mp4", "Project Description Terraform - 1.jpg" , "Terraform Collage.jpg" , "Project Description Terraform - 2.jpg", "Magazine-Mockup-Showcase-3.jpg","Dobule Slide 3.jpg" ,"Project Description Terraform - 3.jpg", "Fence_Banner_Mockup_1.jpg", "Dobule Slide 2.jpg", "Project Description Terraform - 4.jpg","Logo Outline.jpg", "Terraform - Main Logo Animation.mp4", "Project Description Terraform - 5.jpg", "Hero Page.jpg","Our Vision and Philosophy.jpg", "Project Description Terraform - 6.jpg","Terraform Eco-Driven Tiles MP4.mp4", "Our Latest Design Projects 2.jpg", "Project Description Terraform - 7.jpg","Statistics.jpg", "Footer 1.jpg"],
             "coverType": "image",
             "coverPoster": "Frame 20.jpg",
             "listOfTags": ["Identity", "Logo", "UI/UX", "Animation"],
@@ -100,7 +100,7 @@
         {
             "id": 9,
             "title": "Cage",
-            "description": "Totalitarian existence (not life) is best viewed through the prism of absurdity and sarcasm. Bold slogans of the party shaping your individual self into a collective idenity and daily distractions. I wanted to capture that by mixing digital media and physical typography experiments for poster design. So how many fingers, Winston?",
+            "description": "Totalitarian existence (not life) is best viewed through the prism of absurdity and sarcasm. Bold slogans of the party shaping your individual self into a collective identity and daily distractions. I wanted to capture that by mixing digital media and physical typography experiments for poster design. So how many fingers, Winston?",
             "detailsMedia": ["CAGE - Cover image.png", "Cage 1 Pair.jpg", "Cage 2 Pair.jpg", "Cage 3 Pair.jpg", "Cage 4 pair.jpg"],
             "coverType": "image",
             "coverPoster": "CAGE - Cover image squared.jpg",
@@ -112,7 +112,7 @@
         {
             "id": 10,
             "title": "Typography of Oppression",
-            "description": "How does police communicate with the protesters? Is it with words like other humans? Or is it with police batons, shields, pepper sprays, gas cannisters and physical force? And what if we try to put those injuries into living words? Each word is a living organism representing a body of a protester malformed by injuries received from police.",
+            "description": "How does police communicate with the protesters? Is it with words like other humans? Or is it with police batons, shields, pepper sprays, gas cannisters and physical force? And what if we try to put those injuries into living words? The project was exhibited at Galerija Akademija as part of the exposition CACHE.",
             "detailsMedia": ["Typography of Opression Intro Slide.jpg", "Project Description TOFN - 1.jpg" ,"Typography of Opression Collage.png", "Project Description TOFN - 2.jpg" ,"https://lavcraft02.wistia.com/medias/gjy6t3ex2p"],
             "coverType": "image",
             "coverPoster": "Typography of Opression Red Cover vertical.jpg",
