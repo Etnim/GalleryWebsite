@@ -30,13 +30,13 @@ function Header() {
                 <Link to="/"><img id={styles.logo} src={logo} /></Link>
 
                 <ul className={styles.menuItems}>
-                    <li><Link to="/contact/">CONTACT</Link></li>
-                    <li><Link to="/about/">ABOUT</Link></li>
+                    <li><Link to="/contact/">Contact</Link></li>
+                    <li><Link to="/about/">About</Link></li>
                 </ul>
 
                 <ul className={isOpen ? styles.menuItemsOpen : styles.menuItemsHidden}>
-                    <li><Link to="/contact/">CONTACT</Link></li>
-                    <li><Link to="/about/">ABOUT</Link></li>
+                    <li><Link to="/contact/">Contact</Link></li>
+                    <li><Link to="/about/">About</Link></li>
                 </ul>
 
                 <div ref={menuAreaRef} className={styles.mobileMenuWrap}>
@@ -55,8 +55,8 @@ function Header() {
                     </div>
 
                     <ul className={isOpen ? styles.menuItemsOpen : styles.menuItemsHidden}>
-                        <li><Link to="/contact/" onClick={closeMenu}>CONTACT</Link></li>
-                        <li><Link to="/about/" onClick={closeMenu}>ABOUT</Link></li>
+                        <li><Link to="/contact/" onClick={closeMenu}>Contact</Link></li>
+                        <li><Link to="/about/" onClick={closeMenu}>About</Link></li>
                     </ul>
                 </div>
             </nav>

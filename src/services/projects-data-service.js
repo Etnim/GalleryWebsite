@@ -140,7 +140,7 @@ export function _getTagClassName(tag) {
 
     if (allowedTags.includes(tag)) {
         if (tag === 'UI/UX') {
-            return 'tag' + 'UIUX'
+            return 'tagUIUX'
         }
         return 'tag' + tag;
     }

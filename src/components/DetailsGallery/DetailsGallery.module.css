@@ -11,7 +11,7 @@
 }
 
 .descriptionDetails {
-    font-family: Larken-Extra-Bold;
+    font-family: Satoshi-Medium, sans-serif;
 }
 
 .textContainer {
@@ -24,6 +24,7 @@
 
 .title {
     font-size: 100px;
+    font-family: Satoshi-Light, sans-serif;
 }
 
 ul {
@@ -33,19 +34,20 @@ ul {
 }
 
 #descriptionClient {
-    font-family: Larken-Medium;
+    font-family: Satoshi-Medium, sans-serif;
     background-color: white;
     color: black;
 }
 
 #descriptionYear {
-    font-family: Larken-Medium;
+    font-family: Satoshi-Medium, sans-serif;
     background-color: white;
     color: black;
 }
 
 .description {
-    font-size: 30px;
+    font-family: Satoshi-Light, sans-serif;
+    font-size: 28px;
 }
 
 .wistiaBox {
@@ -67,7 +69,6 @@ footer {
     align-items: center;
     justify-content: space-between;
     font-size: 50px;
-    color: white;
 }
 
 footer a {
@@ -107,7 +108,7 @@ footer a:hover {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        font-size: 25px;
+        font-size: 24px;
         color: white;
     }
 

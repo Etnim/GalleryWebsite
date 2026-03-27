@@ -11,9 +11,8 @@
 }
 
 .cardTitle {
-  font-family: Larken-Thin, sans-serif;
+  font-family: Satoshi-Regular, sans-serif;
   font-size: 20px;
-  font-weight: bold;
   margin: 0;
 }
 
@@ -26,7 +25,7 @@
 
 .tagList li {
   font-size-adjust: 0.7;
-  font-family: Arial;
+  font-family: Satoshi-Medium, sans-serif;
   font-size: 0.6rem;
   padding: 0.1rem 0.6rem;
   color: black;

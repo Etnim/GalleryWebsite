@@ -11,6 +11,8 @@
 
 .textContainer {
     text-align: center;
+    font-family: Satoshi-Light, sans-serif;
+    font-size: 28px;
     margin-top: 4rem;
     padding: 0;
 }
@@ -19,7 +21,7 @@
     text-align: center;
     margin: 0 15rem;
     font-size: 20px;
-    font-family: Larken-Thin, sans-serif;
+    font-family: Satoshi-Light, sans-serif;
     margin-bottom: 5rem;
     text-align: center;
 }
@@ -34,6 +36,8 @@
 
 .leftColumn {
     text-align: left;
+    font-family: Satoshi-Light, sans-serif;
+    font-size: 24px;
     flex: 1.2;
 }
 
@@ -50,7 +54,8 @@ ul.contactIcons {
 }
 
 #name {
-    font-family: Larken-Medium, sans-serif;
+    font-family: Satoshi-Bold, sans-serif;
+    font-size: 24px;
 }
 
 #she {
@@ -71,7 +76,7 @@ a {
     .pageContainer {
         text-align: center;
         font-size: 18px;
-        font-family: Larken-Thin, sans-serif;
+        font-family: Satoshi-Regular, sans-serif;
         margin: 0 2rem 3rem 2rem;
     }
 
