@@ -8,6 +8,7 @@
     margin: 10%;
     margin-bottom: 0;
     text-align: center;
+    animation: pageFadeIn 0.9s ease;
 }
 
 .descriptionDetails {

@@ -19,21 +19,16 @@
 }
 
 .navbar a {
+    display: inline-block;
     color: white;
+    font-size: 24px;
     text-decoration: none;
-    background: none;
-    -webkit-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: white;
+    transition: transform 0.5s ease;
 }
 
 .navbar a:hover {
     transform: scale(1.2);
-    font-family: Larken-Extra-Bold;
-}
-
-.navbar a {
-    transition: all 0.5s ease;
 }
 
 .navbar #logo {
@@ -44,10 +39,6 @@
 .navbar img {
     height: 25px;
     transition: all 0.5s ease;
-}
-
-.navbar img:hover {
-    transform: scale(1.2);
 }
 
 .menuItemsOpen {

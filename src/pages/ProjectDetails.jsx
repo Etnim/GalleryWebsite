@@ -11,7 +11,7 @@ const ProjectDetails = () => {
     const project = getDetailsPageProjectDataById(numericId);
 
     return (
-        <div className={styles.detailsContainer}>
+        <div  key={numericId} className={styles.detailsContainer}>
             <div className={styles.textContainer}>
                 <h1 className={styles.title}>{project?.title}</h1>
                 <p className={styles.description}>{project?.description}</p>
