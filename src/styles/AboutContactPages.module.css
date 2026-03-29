@@ -24,6 +24,18 @@
     font-family: Satoshi-Light, sans-serif;
     margin-bottom: 5rem;
     text-align: center;
+     animation: pageFadeIn 0.9s ease;
+}
+
+@keyframes pageFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .twoColumnLayout {

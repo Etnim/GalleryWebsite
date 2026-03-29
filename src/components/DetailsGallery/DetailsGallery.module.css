@@ -1,6 +1,7 @@
 .media {
     height: auto;
     width: 100%;
+    margin-top: 0;
 }
 
 .detailsContainer {
@@ -8,6 +9,7 @@
     margin: 10%;
     margin-bottom: 0;
     text-align: center;
+    animation: pageFadeIn 0.9s ease;
 }
 
 .descriptionDetails {
@@ -16,10 +18,7 @@
 
 .textContainer {
     align-items: center;
-}
-
-.mediaContainer {
-    margin-top: 9%;
+    margin-bottom: 12rem;
 }
 
 .title {
@@ -68,7 +67,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 footer a {
@@ -85,6 +84,17 @@ footer a:hover {
     width: 100%;
     height: 100%;
     border: none;
+}
+
+@keyframes pageFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media (max-width: 800px) {

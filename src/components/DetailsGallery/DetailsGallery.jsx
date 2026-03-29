@@ -63,7 +63,7 @@ function DetailsGallery({ id }) {
                                         key={index}
                                         src={
                                             url +
-                                            "?autoPlay=1" +
+                                            "?autoPlay=0" +
                                             "&mute=1" +
                                             "&loop=1" +
                                             "&controlsVisibleOnLoad=false" +
