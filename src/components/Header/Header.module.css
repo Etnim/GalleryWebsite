@@ -1,13 +1,3 @@
-@font-face {
-    font-family: Larken-Bold;
-    src: url("./fonts/Larken/LarkenDEMO-Bold.otf") format("truetype");
-}
-
-@font-face {
-    font-family: Larken-Extra-Bold;
-    src: url("./fonts/larken-extra-bold.otf") format("truetype");
-}
-
 .navbar {
     display: flex;
     margin-top: 1rem;

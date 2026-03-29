@@ -1,16 +1,26 @@
 @font-face {
-  font-family: Larken-Thin;
-  src: url("./fonts/fonnts.com-Larken_Thin.otf") format("truetype");
+  font-family: Satoshi-Medium;
+  src: url("./fonts/Satoshi-Medium.otf");
 }
 
 @font-face {
-  font-family: Larken-Extra-Bold;
-  src: url("./fonts/fonnts.com-Larken_ExtraBold.otf") format("truetype");
+  font-family: Satoshi-Regular;
+  src: url("./fonts/Satoshi-Regular.otf");
 }
 
 @font-face {
-  font-family: Larken-Medium;
-  src: url("./fonts/fonnts.com-Larken_Medium.otf") format("truetype");
+  font-family: Satoshi-Black;
+  src: url("./fonts/Satoshi-Black.otf");
+}
+
+@font-face {
+  font-family: Satoshi-Light;
+  src: url("./fonts/Satoshi-Light.otf");
+}
+
+@font-face {
+  font-family: Satoshi-Bold;
+  src: url("./fonts/Satoshi-Bold.otf");
 }
 
 body::-webkit-scrollbar {
@@ -22,7 +32,7 @@ body {
   color: white;
   padding: 0;
   margin: 0;
-  font-family: Larken-Thin, sans-serif;
+  font-family: Satoshi-Medium, sans-serif;
   cursor: url('/cursor.png') 12 12, auto;
 }
 
