@@ -7,7 +7,7 @@
             "coverType": "image",
             "coverPoster": "Infineon Packaging Alpha.png",
             "listOfTags": ["Identity", "Logo", "Packaging", "Animation"],
-            "detailsMedia": ["Microchip Glowing GIF.gif", "Project Description 1 - Infineon.jpg", "Infineon Collage Frame.png","Project Description 2 - Infineon.jpg", "Infineon Undeniable Performance.png","Infineon 2nd Split.mp4", "Project Description 3 - Infineon.jpg", "Infineon Packaging Alpha.png", "Infineon 1st Split.mp4", "Project Description 4 - Infineon.jpg", "Slide 13.jpg","Infineon Main Logo Animation.mp4", "Project Description 5 - Infineon.jpg", "SLIDE 14.jpg", "Infineon Business Cards.png", "Infineon Lights On.png", "Project Description 6 - Infineon.jpg", "Citylight_Posters 1.png", "Infineon Single Package.png","Project Description 7 - Infineon.jpg", "Before After.png" ,"Infineon Truck.png", "App Website Slide.png", "Infineon Flag.png"],
+            "detailsMedia": ["Microchip Glowing GIF.gif", "Project Description 2.jpg", "Infineon Collage Frame.png","Project Description 3.jpg", "Infineon Undeniable Performance.png","Infineon 2nd Split.mp4", "Project Description 4.jpg", "Infineon Packaging Alpha.png", "Infineon 1st Split.mp4", "Project Description 5.jpg", "Slide 13.jpg","Infineon Main Logo Animation.mp4", "Project Description 6.jpg", "Infineon Business Cards.png", "Infineon Lights On.png", "Project Description 7.jpg", "Citylight_Posters 1.png", "Infineon Single Package.png","Project Description 8.jpg", "Before After.png" ,"Infineon Truck.png", "App Website Slide.png", "Infineon Flag.png"],
             "client": "Infineon Technologies",
             "year": "2024"
         },
@@ -39,7 +39,7 @@
             "id": 4,
             "title": "Terraform",
             "description": "Concrete jungles are being built with incredible speed. They replace natural greenery and damage the planet's entire ecosystem. Attemps to preserve the greenery are usually futile. Terraform is a conceptualized architecture bureau promoting biophilic design - merging the humans' necessity for buildings with respect to the ancient presence of nature.  ",
-            "detailsMedia": ["Terraform Logo Animation MP4.mp4", "Project Description Terraform - 1.jpg" , "Terraform Collage.jpg" , "Project Description Terraform - 2.jpg", "Magazine-Mockup-Showcase-3.jpg","Dobule Slide 3.jpg" ,"Project Description Terraform - 3.jpg", "Fence_Banner_Mockup_1.jpg", "Dobule Slide 2.jpg", "Project Description Terraform - 4.jpg","Logo Outline.jpg", "Terraform - Main Logo Animation.mp4", "Project Description Terraform - 5.jpg", "Hero Page.jpg","Our Vision and Philosophy.jpg", "Project Description Terraform - 6.jpg","Terraform Eco-Driven Tiles MP4.mp4", "Our Latest Design Projects 2.jpg", "Project Description Terraform - 7.jpg","Statistics.jpg", "Footer 1.jpg"],
+            "detailsMedia": ["Terraform Logo Animation MP4.mp4", "Project Description 2.jpg" , "Terraform Collage.jpg" , "Project Description 3.jpg", "Magazine-Mockup-Showcase-3.jpg","Dobule Slide 3.jpg" ,"Project Description 4.jpg", "Fence_Banner_Mockup_1.jpg", "Dobule Slide 2.jpg", "Project Description 5.jpg","Logo Outline.jpg", "Terraform - Main Logo Animation.mp4", "Project Description 6.jpg", "Hero Page.jpg","Our Vision and Philosophy.jpg", "Project Description 7.jpg","Terraform Eco-Driven Tiles MP4.mp4", "Our Latest Design Projects 2.jpg", "Project Description 8.jpg","Statistics.jpg", "Footer 1.jpg"],
             "coverType": "image",
             "coverPoster": "Frame 20.jpg",
             "listOfTags": ["Identity", "Logo", "UI/UX", "Animation"],
@@ -88,14 +88,14 @@
         {
             "id": 8,
             "title": "Holy",
-            "description": "A never-ending quest of distilling my own identity. “HOLY” is an attempt to identify the depths of who I am, then try to transcend it in visual form. What started as a childish nickname to be represented by in video games, has evolved into a visual identity title. (Currently work in progress)",
-            "detailsMedia": ["Holy - Main Composition.mp4", "Project Description 1.jpg"],
+            "description": "A never-ending quest of distilling my own identity. “HOLY” is yet another attempt to identify the depths of who I am, then try to transcend it in visual form. Let's make it very personal and very sincere. (Currently work in progress)",
+            "detailsMedia": ["Holy - Main Composition Purple Background.mp4", "Project Description 1.jpg", "HOLY - Collage Slide.jpg", "Project Description 2.jpg", "Judo - 1.jpg", "Judo - 2.jpg", "Judo Sparring Video No Sound.mp4", "Project Description 3.jpg", "Tea 1.jpg", "Tea - 2.jpg", "Holy Tea Pouring Purple Background NO Sound.mp4", "Project Description 4.jpg", "Soul - 1.jpg", "Soul - 2.jpg"],
             "coverType": "video",
-            "coverVideo": "Holy - Main Composition Square Cover.mp4",
+            "coverVideo": "Holy - Main Composition Purple Background Square.mp4",
             "listOfTags": [ "Identity","Logo", "Animation", "Print"],
             "altText": "Monkey Dream project cover image",
             "client": "Myself",
-            "year": "2025"
+            "year": "2026"
         },
         {
             "id": 9,
