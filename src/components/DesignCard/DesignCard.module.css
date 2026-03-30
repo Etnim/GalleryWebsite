@@ -3,7 +3,10 @@
   text-align: left;
   width: inherit;
   transition: transform 0.5s ease-in-out;
-  animation: pageFadeIn 0.9s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
 }
 
 .media {
@@ -71,8 +74,4 @@
 
 .tagUIUX {
   background-color: #0044d8;
-}
-
-.card:hover {
-  transform: scale(1.03);
 }
