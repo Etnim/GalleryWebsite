@@ -19,7 +19,7 @@
             "coverPoster": "Zephyr vertical cover.jpg",
             "listOfTags": ["Identity", "Logo", "Animation", "UI/UX"],
             "altText": "Zephyr project cover image",
-            "detailsMedia": ["Zephyr Logo Animation Color Fixed.mp4", "Project Description Zephyr - 1.jpg", "ZEPHYR - Grid Slide.png", "Project Description Zephyr - 2.jpg", "fitness-woman-with-smartphone-with-blank-screen.png", "Zephyr App Double Slide.png", "Project Description Zephyr - 3.jpg", "pexels-anastasia-shuraeva-7540331.png", "Project Description Zephyr - 4.jpg", "Zephyr Logo Grid.png", "Zephyr - Main Logo Animation.mp4", "Project Description Zephyr - 5.jpg", "Welcome Anna Phone Mockup.png", "Project Description Zephyr - 6.jpg", "UI SYSTEM SLDIE.png", "Free Apple Watch on Wirst Mockup.png", "UI SYSTEM SLDIE 2.png", "Project Description Zephyr - 7.jpg", "Behance Title Slide 4.jpg"],
+            "detailsMedia": ["Zephyr Logo Animation Color Fixed.mp4", "Project Description 1.jpg", "ZEPHYR - Grid Slide.png", "Project Description 2.jpg", "fitness-woman-with-smartphone-with-blank-screen.png", "Zephyr App Double Slide.png", "Project Description 3.jpg", "pexels-anastasia-shuraeva-7540331.png", "Project Description 4.jpg", "Zephyr Logo Grid.png", "Zephyr - Main Logo Animation.mp4", "Project Description 5.jpg", "Welcome Anna Phone Mockup.png", "Project Description 6.jpg", "UI SYSTEM SLDIE.png", "Free Apple Watch on Wirst Mockup.png", "UI SYSTEM SLDIE 2.png", "Project Description 7.jpg", "Behance Title Slide 4.jpg"],
             "client": "Zephyr",
             "year": "2024"
         },
@@ -113,7 +113,7 @@
             "id": 10,
             "title": "Typography of Oppression",
             "description": "How does police communicate with the protesters? Is it with words like other humans? Or is it with police batons, shields, pepper sprays, gas cannisters and physical force? And what if we try to put those injuries into living words? The project was exhibited at Galerija Akademija as part of the exposition CACHE.",
-            "detailsMedia": ["Typography of Opression Intro Slide.jpg", "Project Description TOFN - 1.jpg" ,"Typography of Opression Collage.png", "Project Description TOFN - 2.jpg" ,"https://lavcraft02.wistia.com/medias/gjy6t3ex2p"],
+            "detailsMedia": ["Typography of Opression Intro Slide.jpg","Typography of Opression Collage.png", "https://lavcraft02.wistia.com/medias/gjy6t3ex2p"],
             "coverType": "image",
             "coverPoster": "Typography of Opression Red Cover vertical.jpg",
             "listOfTags": ["Art", "Exposition", "Typography"],
