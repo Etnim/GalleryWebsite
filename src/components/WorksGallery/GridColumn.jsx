@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import styles from "./WorksGallery.module.css";
 import DesignCard from "../DesignCard/DesignCard";
 import { Link } from 'react-router-dom';
@@ -9,23 +9,24 @@ const GridColumn = React.forwardRef(function GridColumn({ cards, idName }, ref) 
         <div
             ref={ref}
             className={styles.gridColumn}
-            id={idName}>
+            id={idName}
+        >
             {cards.map((card, idx) => (
                 <Link key={card.id} to={card.id.toString()} className={styles.link}>
                     <DesignCard
                         key={card.id ?? `${card.title}-${idx}`}
                         cardName={card.title}
                         listOfTags={card.listOfTags}
-                        cover={card.cover}>
-                    </DesignCard>
+                        cover={card.cover}
+                    />
                 </Link>
             ))}
         </div>
-    );  
-}
-)
+    );
+});
 
 export default GridColumn;
+
 GridColumn.propTypes = {
     cards: PropTypes.arrayOf(
         PropTypes.shape({

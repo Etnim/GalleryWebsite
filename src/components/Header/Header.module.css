@@ -1,14 +1,37 @@
+.headerWrapper {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: black;
+    transition:
+        transform 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+        opacity 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform, opacity;
+}
+
+.headerVisible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.headerHidden {
+    transform: translateY(-120%);
+    opacity: 0;
+    pointer-events: none;
+}
+
 .navbar {
     display: flex;
-    margin-top: 1rem;
+    margin-top: 0;
     margin-bottom: 2rem;
     margin-right: 4%;
     margin-left: 4%;
     padding: 1rem;
     font-size: 20px;
     color: white;
-
     position: relative;
+    background: black;
 }
 
 .menuItems {
@@ -102,5 +125,18 @@
     .menuTrigger {
         display: block;
         margin-left: auto;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .headerWrapper {
+        transition: none;
+    }
+
+    .headerVisible,
+    .headerHidden {
+        transform: none;
+        opacity: 1;
+        pointer-events: auto;
     }
 }

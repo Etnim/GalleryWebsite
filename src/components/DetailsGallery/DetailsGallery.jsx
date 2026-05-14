@@ -1,4 +1,6 @@
-import PropTypes from 'prop-types'
+import { useEffect } from 'react';
+import PropTypes from 'prop-types';
+import Lenis from 'lenis';
 import styles from "./DetailsGallery.module.css";
 import {
     _getMediaFolderPath,
@@ -16,6 +18,35 @@ function DetailsGallery({ id }) {
     const project = getDetailsPageProjectDataById(id);
     const detailsMedia = getProjectDetailsPageMedia(id);
     const mediaFolder = _getMediaFolderPath(id);
+
+    useEffect(() => {
+        const lenis = new Lenis({
+            duration: 1.55,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            orientation: 'vertical',
+            gestureOrientation: 'vertical',
+            smoothWheel: true,
+            wheelMultiplier: 0.90,
+            touchMultiplier: 1.4,
+            smoothTouch: false,
+            infinite: false,
+        });
+
+        let animationFrameId;
+
+        function raf(time) {
+            lenis.raf(time);
+            animationFrameId = requestAnimationFrame(raf);
+        }
+
+        animationFrameId = requestAnimationFrame(raf);
+
+        return () => {
+            cancelAnimationFrame(animationFrameId);
+            lenis.destroy();
+        };
+    }, []);
+
     return (
         <div className={styles.mediaContainer}>
             {detailsMedia && detailsMedia.length > 0
@@ -54,13 +85,11 @@ function DetailsGallery({ id }) {
 
                         if (_isLink(mediaName)) {
                             const url = _isWistia(mediaName) ? _getWistiaEmbedUrl(mediaName) : mediaName;
-                            console.log({ url });
 
                             return (
                                 <div className={styles.wistiaBox} key={index}>
                                     <iframe
                                         className={styles.media}
-                                        key={index}
                                         src={
                                             url +
                                             "?autoPlay=0" +
@@ -77,6 +106,8 @@ function DetailsGallery({ id }) {
                                 </div>
                             );
                         }
+
+                        return null;
                     }))
                 : (<p>No media</p>)}
         </div>

@@ -3,23 +3,38 @@ import GridColumn from './GridColumn';
 import styles from './WorksGallery.module.css';
 
 const DRAG_PER_SEC = 0.95;
-const normalizeWheel = e => (e.deltaMode === 1 ? e.deltaY * 16 : e.deltaMode === 2 ? e.deltaY * window.innerHeight : e.deltaY);
+
+const normalizeWheel = e =>
+    e.deltaMode === 1
+        ? e.deltaY * 16
+        : e.deltaMode === 2
+            ? e.deltaY * window.innerHeight
+            : e.deltaY;
+
 const buildColumns = (cards, columns) => {
     const out = Array.from({ length: columns }, () => []);
     let start = 0, i = 0;
+
     while (i < cards.length) {
-        for (let j = start; j < columns && i < cards.length; j++){
+        for (let j = start; j < columns && i < cards.length; j++) {
             out[j].push(cards[i++]);
         }
+
         start = (start + 1) % columns;
-        if( i % 4 === 0) {
+
+        if (i % 4 === 0) {
             start++;
         }
     }
+
     return out;
 };
 
-export default function Gallery({listOfCards, columns = 4, columnSpeeds = [0.5, 1, 2, 2.3] }) {
+export default function Gallery({
+    listOfCards,
+    columns = 4,
+    columnSpeeds = [0.5, 1, 2, 2.3]
+}) {
     const galleryColumns = useMemo(() => buildColumns(listOfCards, columns), [listOfCards, columns]);
     const containerRef = useRef(null);
     const velocities = useRef(new Array(galleryColumns.length).fill(0));
@@ -38,9 +53,11 @@ export default function Gallery({listOfCards, columns = 4, columnSpeeds = [0.5, 
 
         const onWheel = (e) => {
             const delta = normalizeWheel(e);
+
             galleryColumns.forEach((_, i) => {
                 velocities.current[i] += delta * (columnSpeeds[i] ?? 1);
             });
+
             if (!rafId.current) {
                 lastTime.current = performance.now();
                 rafId.current = requestAnimationFrame(animate);
@@ -53,7 +70,6 @@ export default function Gallery({listOfCards, columns = 4, columnSpeeds = [0.5, 
             el.removeEventListener('wheel', onWheel, { capture: true });
         };
     }, [galleryColumns.length, columnSpeeds]);
-
 
     function animate(now) {
         const dt = Math.min((now - lastTime.current) / 1000, 0.05);
@@ -69,6 +85,7 @@ export default function Gallery({listOfCards, columns = 4, columnSpeeds = [0.5, 
                 cols[i].scrollTop += v * dt;
                 return v * decay;
             }
+
             return 0;
         });
 
