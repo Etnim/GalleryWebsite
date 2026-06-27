@@ -1,26 +1,41 @@
 @font-face {
-  font-family: Satoshi-Medium;
-  src: url("./fonts/Satoshi-Medium.otf");
+  font-family: Onest-Black;
+  src: url("./fonts/Onest-Black.ttf");
 }
 
 @font-face {
-  font-family: Satoshi-Regular;
-  src: url("./fonts/Satoshi-Regular.otf");
+  font-family: Onest-ExtraBold;
+  src: url("./fonts/Onest-ExtraBold.ttf");
 }
 
 @font-face {
-  font-family: Satoshi-Black;
-  src: url("./fonts/Satoshi-Black.otf");
+  font-family: Onest-Bold;
+  src: url("./fonts/Onest-Bold.ttf");
 }
 
 @font-face {
-  font-family: Satoshi-Light;
-  src: url("./fonts/Satoshi-Light.otf");
+  font-family: Onest-SemiBold;
+  src: url("./fonts/Onest-SemiBold.ttf");
 }
 
 @font-face {
-  font-family: Satoshi-Bold;
-  src: url("./fonts/Satoshi-Bold.otf");
+  font-family: Onest-Medium;
+  src: url("./fonts/Onest-Medium.ttf");
+}
+
+@font-face {
+  font-family: Onest-Regular;
+  src: url("./fonts/Onest-Regular.ttf");
+}
+
+@font-face {
+  font-family: Onest-Light;
+  src: url("./fonts/Onest-Light.ttf");
+}
+
+@font-face {
+  font-family: Onest-Thin;
+  src: url("./fonts/Onest-Thin.ttf");
 }
 
 body::-webkit-scrollbar {
@@ -32,7 +47,7 @@ body {
   color: white;
   padding: 0;
   margin: 0;
-  font-family: Satoshi-Medium, sans-serif;
+  font-family: Onest-Regular, sans-serif;
   cursor: url('/cursor.png') 12 12, auto;
 }
 

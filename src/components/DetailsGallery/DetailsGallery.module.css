@@ -45,7 +45,7 @@
 }
 
 .descriptionDetails {
-    font-family: Satoshi-Medium, sans-serif;
+    font-family: Onest-Light, sans-serif;
 }
 
 .textContainer {
@@ -55,14 +55,14 @@
 
 .title {
     font-size: 100px;
-    font-family: Satoshi-Light, sans-serif;
+    font-family: Onest-Thin, sans-serif;
     animation: textRevealUp 1s cubic-bezier(0.16, 1, 0.3, 1) both;
     animation-delay: 0.08s;
 }
 
 .description {
-    font-family: Satoshi-Light, sans-serif;
-    font-size: 28px;
+    font-family: Onest-Light, sans-serif;
+    font-size: 24px;
     animation: textRevealUp 1s cubic-bezier(0.16, 1, 0.3, 1) both;
     animation-delay: 0.22s;
 }
@@ -76,14 +76,14 @@
 }
 
 #descriptionClient {
-    font-family: Satoshi-Medium, sans-serif;
+    font-family: Onest-Regular, sans-serif;
     background-color: white;
     color: black;
 }
 
 #descriptionYear {
-    font-family: Satoshi-Medium, sans-serif;
-    background-color: white;
+    font-family: Onest-Regular, sans-serif;
+    background-color: #ffffff;
     color: black;
 }
 
