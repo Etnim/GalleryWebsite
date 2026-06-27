@@ -1,8 +1,8 @@
+import React from "react";
 import { Outlet, useParams } from "react-router-dom";
 import { getDetailsPageProjectDataById } from '../services/projects-data-service.js';
 import DetailsGallery from "../components/DetailsGallery/DetailsGallery";
 import styles from "../components/DetailsGallery/DetailsGallery.module.css";
-import TagList from "../components/TagList/TagList.jsx";
 import Footer from "../components/DetailsGallery/Footer.jsx";
 
 const ProjectDetails = () => {
@@ -19,7 +19,6 @@ const ProjectDetails = () => {
                     <li><b className={styles.descriptionDetails} > Year: </b> <b id={styles.descriptionYear}>{project?.year}</b> </li>
                     <li><b className={styles.descriptionDetails} > Client: </b> <b id={styles.descriptionClient}>{project?.client}</b> </li>
                 </ul>
-                <TagList tags={project.listOfTags}/>
             </div>
             <DetailsGallery id={numericId} />
             <Footer id={numericId}/>

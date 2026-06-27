@@ -1,122 +1,101 @@
-import { useEffect } from 'react';
-import PropTypes from 'prop-types';
-import Lenis from 'lenis';
+import React from "react";
+import PropTypes from "prop-types";
+import useLenisScroll from "../../hooks/useLenisScroll";
+import scrollPageToTop from "../../hooks/scrollPageToTop";
 import styles from "./DetailsGallery.module.css";
 import {
-    _getMediaFolderPath,
-    getDetailsPageProjectDataById,
-    getProjectDetailsPageMedia,
-    _isImage,
-    _isLink,
-    _isVideo,
-    _getMediaPath,
-    _isWistia,
-    _getWistiaEmbedUrl
-} from '../../services/projects-data-service.js';
+  _getMediaFolderPath,
+  getDetailsPageProjectDataById,
+  getProjectDetailsPageMedia,
+  _isImage,
+  _isLink,
+  _isVideo,
+  _getMediaPath,
+  _isWistia,
+  _getWistiaEmbedUrl,
+} from "../../services/projects-data-service.js";
 
 function DetailsGallery({ id }) {
-    const project = getDetailsPageProjectDataById(id);
-    const detailsMedia = getProjectDetailsPageMedia(id);
-    const mediaFolder = _getMediaFolderPath(id);
+  const project = getDetailsPageProjectDataById(id);
+  const detailsMedia = getProjectDetailsPageMedia(id);
+  const mediaFolder = _getMediaFolderPath(id);
 
-    useEffect(() => {
-        const lenis = new Lenis({
-            duration: 1.55,
-            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-            orientation: 'vertical',
-            gestureOrientation: 'vertical',
-            smoothWheel: true,
-            wheelMultiplier: 0.90,
-            touchMultiplier: 1.4,
-            smoothTouch: false,
-            infinite: false,
-        });
+  useLenisScroll();
+  scrollPageToTop();
 
-        let animationFrameId;
+  return (
+    <div className={styles.mediaContainer}>
+      {detailsMedia && detailsMedia.length > 0 ? (
+        detailsMedia.map((mediaName, index) => {
+          if (!mediaName) return null;
 
-        function raf(time) {
-            lenis.raf(time);
-            animationFrameId = requestAnimationFrame(raf);
-        }
+          const src = _getMediaPath(mediaFolder, mediaName);
 
-        animationFrameId = requestAnimationFrame(raf);
+          if (_isImage(mediaName)) {
+            return (
+              <img
+                className={styles.media}
+                key={index}
+                src={src}
+                alt={project?.title || ""}
+              />
+            );
+          }
 
-        return () => {
-            cancelAnimationFrame(animationFrameId);
-            lenis.destroy();
-        };
-    }, []);
+          if (_isVideo(mediaName)) {
+            return (
+              <video
+                className={styles.media}
+                key={index}
+                src={src}
+                autoPlay={true}
+                muted={true}
+                loop={true}
+                playsInline={true}
+                controls={false}
+                preload={"none"}
+              />
+            );
+          }
 
-    return (
-        <div className={styles.mediaContainer}>
-            {detailsMedia && detailsMedia.length > 0
-                ? (
-                    detailsMedia.map((mediaName, index) => {
-                        if (!mediaName) return null;
+          if (_isLink(mediaName)) {
+            const url = _isWistia(mediaName)
+              ? _getWistiaEmbedUrl(mediaName)
+              : mediaName;
 
-                        const src = _getMediaPath(mediaFolder, mediaName);
+            return (
+              <div className={styles.wistiaBox} key={index}>
+                <iframe
+                  className={styles.media}
+                  src={
+                    url +
+                    "?autoPlay=0" +
+                    "&mute=1" +
+                    "&loop=1" +
+                    "&controlsVisibleOnLoad=false" +
+                    "&smallPlayButton=false" +
+                    "&bigPlayButton=true" +
+                    "&playbar=false" +
+                    "&videoFoam=true"
+                  }
+                  allow="autoplay; fullscreen"
+                ></iframe>
+              </div>
+            );
+          }
 
-                        if (_isImage(mediaName)) {
-                            return (
-                                <img
-                                    className={styles.media}
-                                    key={index}
-                                    src={src}
-                                    alt={project?.title || ''}
-                                />
-                            );
-                        }
-
-                        if (_isVideo(mediaName)) {
-                            return (
-                                <video
-                                    className={styles.media}
-                                    key={index}
-                                    src={src}
-                                    autoPlay={true}
-                                    muted={true}
-                                    loop={true}
-                                    playsInline={true}
-                                    controls={false}
-                                    preload={'none'}
-                                />
-                            );
-                        }
-
-                        if (_isLink(mediaName)) {
-                            const url = _isWistia(mediaName) ? _getWistiaEmbedUrl(mediaName) : mediaName;
-
-                            return (
-                                <div className={styles.wistiaBox} key={index}>
-                                    <iframe
-                                        className={styles.media}
-                                        src={
-                                            url +
-                                            "?autoPlay=0" +
-                                            "&mute=1" +
-                                            "&loop=1" +
-                                            "&controlsVisibleOnLoad=false" +
-                                            "&smallPlayButton=false" +
-                                            "&bigPlayButton=true" +
-                                            "&playbar=false" +
-                                            "&videoFoam=true"
-                                        }
-                                        allow="autoplay; fullscreen"
-                                    ></iframe>
-                                </div>
-                            );
-                        }
-
-                        return null;
-                    }))
-                : (<p>No media</p>)}
-        </div>
-    )
+          return null;
+        })
+      ) : (
+        <p>No media</p>
+      )}
+    </div>
+  );
 }
 
 DetailsGallery.propTypes = {
-    detailsMedia: PropTypes.arrayOf(PropTypes.string),
-    id: PropTypes.number
-}
+  detailsMedia: PropTypes.arrayOf(PropTypes.string),
+  id: PropTypes.number,
+};
 
 export default DetailsGallery;

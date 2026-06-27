@@ -2,11 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 3rem;
+  gap: 2rem;
 
-  width: fit-content;
-  max-width: 100%;
-  margin: 2% auto 6rem;
+  width: 100%;
+  margin: clamp(5rem, 8vw, 6.25rem) auto 3rem;
   padding: 1rem 0;
 
   box-sizing: border-box;
@@ -14,24 +13,20 @@
 }
 
 .gridColumn {
-  flex: 0 0 40rem;
-
+  flex: 1 1 28rem;
+  max-width: 40rem;
+  min-width: 22rem;
+  gap: 2rem;
   display: flex;
   flex-direction: column;
 }
 
 .footerGallery {
-  color: rgb(162, 161, 161);
   margin: 0;
-  font-size: 14px;
+  font-size: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-}
-
-.footerGallery b {
-  text-decoration: underline;
 }
 
 .link {
@@ -61,12 +56,12 @@
   .gallery {
     flex-direction: column;
 
-    margin: 1rem 4% 4rem;
+    margin: 1rem 4% 6.25rem;
     padding: 1rem 0;
   }
 
   .gridColumn {
     flex: none;
-    width: 40rem ;
+    width: 40rem;
   }
 }

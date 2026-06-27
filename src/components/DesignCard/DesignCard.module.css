@@ -1,6 +1,5 @@
 .card {
-  padding: 1rem;
-  text-align: left;
+  padding: 0;
   width: inherit;
   transition: transform 0.5s ease-in-out;
 }
@@ -11,67 +10,23 @@
 
 .media {
   margin-bottom: 1rem;
-  height: 40rem;
   width: 100%;
+  height: auto;
+  max-height: 60rem;
+  border-radius: 24px;
+  object-fit: cover;
 }
 
-.cardTitle {
-  font-family: Onest-Light, sans-serif;
+.projectInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   font-size: 24px;
   margin: 0;
 }
 
-.tagList {
-  display: inline-flex;
-  padding-left: 0;
-  list-style: none;
-  gap: 5px;
-}
-
-.tagList li {
-  font-size-adjust: 0.7;
-  font-family: Onest-Medium, sans-serif;
-  font-size: 0.6rem;
-  padding: 0.1rem 0.6rem;
-  color: black;
-}
-
-.tagAnimation {
-  background-color: #bf2b5d;
-}
-
-.tagArt {
-  background-color: #42aa9c;
-}
-
-.tagIdentity {
-  background-color: #bf9b74;
-}
-
-.tagInfographic {
-  background-color: #7488bf;
-}
-
-.tagLogo {
-  background-color: #7da354;
-}
-
-.tagPackaging {
-  background-color: #ae79b2;
-}
-
-.tagExposition{
-  background-color: #aaaaaa;
-}
-
-.tagPrint {
-  background-color: #ad9b4e;
-}
-
-.tagTypography {
-  background-color: #dbc015;
-}
-
-.tagUIUX {
-  background-color: #0044d8;
+.projectInfo p {
+  padding: 0 10px;
+  margin: 0;
 }

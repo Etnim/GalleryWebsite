@@ -3,10 +3,10 @@
         {
             "id": 1,
             "title": "Infineon",
+            "subTitle": "Brand Identity",
             "description": "Infineon is a semiconductor manufacturer in Germany running on a 20th century visual identity that couldn't keep up with the company’s rapid development. There were 3 main goals of the rebranding: develop a timeless logotype adaptable to the tiny surface of a microchip, rework the color palette to underline the company’s raw success, and rephrase the brand language to reflect its reliability and boldness.",
             "coverType": "image",
             "coverPoster": "Infineon - Cover.png",
-            "listOfTags": ["Identity", "Logo", "Packaging", "Animation"],
             "detailsMedia": ["Microchip Glowing GIF.gif","Infineon Undeniable Performance.png","Infineon 2nd Split.mp4", "Infineon Packaging Alpha.png", "Infineon 1st Split.mp4", "Slide 13.jpg","Infineon Main Logo Animation.mp4", "Infineon Business Cards.png", "Infineon Lights On.png", "Citylight_Posters 1.png", "Infineon Single Package.png", "Before After.png" ,"Infineon Truck.png", "App Website Slide.png", "Infineon Flag.png"],
             "client": "Infineon Technologies",
             "year": "2024"
@@ -15,11 +15,11 @@
         {
             "id": 2,
             "title": "Terraform",
+            "subTitle": "Web App",
             "description": "Concrete jungles are being built with incredible speed. They replace natural greenery and damage the planet's entire ecosystem. Attemps to preserve the greenery are usually futile. Terraform is a conceptualized architecture bureau promoting biophilic design - merging the humans' necessity for buildings with respect to the ancient presence of nature.  ",
             "detailsMedia": ["Terraform Logo Animation MP4.mp4", "Project Description 2.jpg", "Magazine-Mockup-Showcase-3.jpg","Dobule Slide 3.jpg" , "Fence_Banner_Mockup_1.jpg", "Dobule Slide 2.jpg", "Logo Outline.jpg", "Terraform - Main Logo Animation.mp4", "Hero Page.jpg","Our Vision and Philosophy.jpg", "Terraform Eco-Driven Tiles MP4.mp4", "Our Latest Design Projects 2.jpg", "Statistics.jpg", "Footer 1.jpg"],
             "coverType": "image",
             "coverPoster": "Terraform - Cover.png",
-            "listOfTags": ["Identity", "Logo", "UI/UX", "Animation"],
             "altText": "Monkey Dream project cover image",
             "client": "Terraform",
             "year": "2024"
@@ -27,11 +27,11 @@
 {
             "id": 3,
             "title": "Rock Sense",
+            "subTitle": "Mobile App",
             "description": "Concrete jungles are being built with incredible speed. They replace natural greenery and damage the planet's entire ecosystem. Attemps to preserve the greenery are usually futile. Terraform is a conceptualized architecture bureau promoting biophilic design - merging the humans' necessity for buildings with respect to the ancient presence of nature.  ",
             "detailsMedia": [],
             "coverType": "image",
             "coverPoster": "Rock Sense.png",
-            "listOfTags": ["Identity", "Logo", "UI/UX", "Animation"],
             "altText": "Monkey Dream project cover image",
             "client": "Terraform",
             "year": "2024"
@@ -39,6 +39,7 @@
         {
             "id": 4,
             "title": "Holy",
+            "subTitle": "Brand Identity",
             "description": "A never-ending quest of distilling my own visual identity. “HOLY” is the vizualisation of ME - my habits, thoughts, lifestyle and goals. Very different from classic visual identity project, I wanted to capture the essense of my personality here. Using real photos of my everyday life and real story of my path.",
             "detailsMedia": ["Holy - Main Composition Black Background.mp4", "Project Description 1.jpg", "png holy sequence.mp4", "Project Description 2.jpg", "Judo - 1.jpg", "Judo - 2.jpg", "Judo Sparring Colors.mp4", "Project Description 3.jpg", "Tea 1.jpg", "Holy Double Tea Slide.jpg", "Holy Tea Pouring Color.mp4", "Project Description 4.jpg", "knees 12.png", "Soul 2.png", "Version 6.mp4", "Project Description 5.jpg", "Business_Card_Mockup_2 1.png", "photo collage.png","Holy Final Slide.png"],
             "coverType": "video",

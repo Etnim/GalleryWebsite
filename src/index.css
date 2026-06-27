@@ -43,11 +43,11 @@ body::-webkit-scrollbar {
 }
 
 body {
-  background-color: black;
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   padding: 0;
   margin: 0;
-  font-family: Onest-Regular, sans-serif;
+  font-family: Onest-Medium, sans-serif;
   cursor: url('/cursor.png') 12 12, auto;
 }
 
