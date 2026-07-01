@@ -1,141 +1,132 @@
-import { projects } from "../assets/data.json";
+const IMAGE_EXTENSIONS = ["png", "jpg", "jpeg", "webp", "gif", "svg"];
+const VIDEO_EXTENSIONS = ["mp4", "webm", "mov"];
+const TEXT_EXTENSIONS = ["txt", "md"];
 
-const assetsPath = "../assets/works";
-const media = import.meta.glob(
-  "../assets/works/**/*.{png,jpg,jpeg,webp,avif,gif,svg,mp4,webm}",
-  { eager: true, import: "default" },
-);
-const projectsById = new Map(
-  projects.map((project) => [Number(project.id), project]),
-);
-const worksAmount = projectsById.size;
+// This imports all files inside src/assets/projects as URLs
+const projectAssetsFilePaths = import.meta.glob("../assets/projects/**/*", {
+  eager: true,
+  query: "?url",
+  import: "default",
+});
 
-export function getAllProjects() {
-  return projects.map((project) => {
-    return getHomePageProjectDataById(project.id);
-  });
-}
+const projectDataModules = import.meta.glob(
+  "../assets/projects/project-*/projectData.js",
+  { eager: true },
+);
 
 export function getWorksAmount() {
-  return worksAmount;
+  return Object.values(projectDataModules).length;
 }
 
-/**
- * @param {number} id
- * @returns
- */
-export function getHomePageProjectDataById(id) {
-  const mediaFolder = _getMediaFolderPath(id);
-  const projectData = projectsById.get(Number(id));
+export function getProjectDetailsById(id) {
+  const projectDataModule = Object.values(projectDataModules).find(
+    (module) => module.projectDetails.id === id,
+  );
 
-  if (!projectData) return null;
+  if (!projectDataModule) {
+    throw new Error(`Project not found: ${id}`);
+  }
 
+  return _mapToProjectDetails(projectDataModule.projectDetails);
+}
+
+export function getAllProjects() {
+  return Object.values(projectDataModules)
+    .map((module) => _mapToProject(module.projectDetails))
+    .sort((a, b) => a.id - b.id);
+}
+
+export function _mapToProjectDetails(projectData) {
   return {
     id: projectData.id,
     title: projectData.title,
-    subTitle: projectData.subTitle,
-    cover: _getCover(mediaFolder, projectData),
-  };
-}
-
-/**
- * @param {number} id
- * @returns
- */
-export function getDetailsPageProjectDataById(id) {
-  const projectData = projectsById.get(Number(id));
-
-  if (!projectData) return null;
-
-  return {
-    id: projectData.id,
-    title: projectData.title,
-    subTitle: projectData.subTitle,
-    description: projectData.description,
-    client: projectData.client,
     year: projectData.year,
+    type: projectData.type,
+    role: projectData.role,
+    status: projectData.status,
+    template: projectData.template.map((item) =>
+      _mapTemplateItem(projectData.id, item),
+    ),
   };
 }
 
-/**
- * @param {number} id
- * @returns
- */
-export function _getMediaFolderPath(id) {
-  const base = import.meta.env.BASE_URL;
-  //TODO add src when locally
-  return assetsPath + "/work" + id;
-}
-
-/**
- * @param {number} id
- * @returns - json object for project
- */
-function _getProjectData(id) {
-  return projectsById.get(Number(id)) || null;
-}
-
-export function getProjectDetailsPageMedia(id) {
-  const projectData = _getProjectData(id);
-  return (projectData.detailsMedia || []).filter(Boolean);
-}
-
-export function _isImage(name = "") {
-  return /\.(png|jpe?g|webp|avif|gif|svg)$/i.test(name);
-}
-
-export function _isVideo(name = "") {
-  return /\.(mp4|webm)$/i.test(name);
-}
-
-export function _isLink(name = "") {
-  return /^https?:\/\//i.test(name) || /^www\./i.test(name);
-}
-
-function _getCover(mediaFolder, projectData) {
-  if (projectData.coverType === "video") {
-    return _getVideoElement(mediaFolder, projectData.coverVideo);
-  }
-  if (projectData.coverType === "image") {
-    return _getImageElement(mediaFolder, projectData.coverPoster);
-  }
-  return null;
-}
-
-function _getVideoElement(mediaFolder, videoFileName) {
+export function _mapToProject(projectData) {
   return {
-    type: "video",
-    src: _getMediaPath(mediaFolder, videoFileName),
-    autoPlay: true,
-    muted: true,
-    loop: true,
-    playsInline: true,
-    controls: false,
-    preload: "none",
+    id: projectData.id,
+    title: projectData.title,
+    subtitle: projectData.subTitle,
+    cover: {
+      type: _getCoverType(projectData.coverFileName),
+      src: _getFilePath(projectData.id, projectData.coverFileName),
+    },
   };
 }
 
-export function _getImageElement(mediaFolder, posterFileName) {
-  return {
-    type: "image",
-    src: _getMediaPath(mediaFolder, posterFileName),
-  };
+function _getFilePath(projectId, fileName) {
+  const folder = _getFolderByFileExtension(fileName);
+
+  const assetPath = `../assets/projects/project-${projectId}/${folder}/${fileName}`;
+
+  const fileUrl = projectAssetsFilePaths[assetPath];
+
+  if (!fileUrl) {
+    throw new Error(`Asset not found: ${assetPath}`);
+  }
+
+  return fileUrl;
 }
 
-export function _getMediaPath(mediaFolder, fileName) {
-  const path = mediaFolder + "/" + fileName;
-  return media[path] || null;
+function _getFolderByFileExtension(fileName) {
+  const extension = _getFileExtension(fileName);
+
+  if (IMAGE_EXTENSIONS.includes(extension)) {
+    return "images";
+  }
+
+  if (VIDEO_EXTENSIONS.includes(extension)) {
+    return "videos";
+  }
+
+  if (TEXT_EXTENSIONS.includes(extension)) {
+    return "texts";
+  }
+
+  throw new Error(`Unsupported file extension: ${extension}`);
 }
 
-export function _isWistia(name = "") {
-  return /wistia\.com|wistia\.net/i.test(name);
+function _getCoverType(coverFileName) {
+  const extension = _getFileExtension(coverFileName);
+  console.log("Cover file extension:", extension);
+
+  if (IMAGE_EXTENSIONS.includes(extension)) {
+    return "image";
+  }
+
+  if (VIDEO_EXTENSIONS.includes(extension)) {
+    return "video";
+  }
+
+  throw new Error(`Unsupported cover extension: ${extension}`);
 }
 
-export function _getWistiaEmbedUrl(url) {
-  const match = url.match(/(?:medias|iframe)\/([a-zA-Z0-9]+)/);
+function _getFileExtension(fileName) {
+  return fileName.split(".").pop().toLowerCase();
+}
 
-  if (!match) return null;
+function _mapTemplateItem(projectId, item) {
+  if (item.file) {
+    return {
+      file: _getFilePath(projectId, item.file),
+    };
+  }
 
-  const mediaId = match[1];
-  return `https://fast.wistia.net/embed/iframe/${mediaId}`;
+  if (item.array) {
+    return {
+      array: item.array.map((nestedItem) =>
+        _mapTemplateItem(projectId, nestedItem),
+      ),
+    };
+  }
+
+  return item;
 }

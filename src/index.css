@@ -38,19 +38,15 @@
   src: url("./fonts/Onest-Thin.ttf");
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
 body {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   padding: 0;
   margin: 0;
   font-family: Onest-Medium, sans-serif;
-  cursor: url('/cursor.png') 12 12, auto;
+  /* cursor: url('/cursor.png') 12 12, auto; */
 }
 
-a, .clickable {
+/* a, .clickable {
   cursor: url('/cursor.png') 13 13, pointer;
-}
+} */

@@ -11,7 +11,7 @@ const GridColumn = React.forwardRef(function GridColumn(
   return (
     <div ref={ref} className={styles.gridColumn} id={idName}>
       {cards.map((card, idx) => (
-        <Link key={card.id} to={card.id.toString()} className={styles.link}>
+        <Link key={card.id} to={String(card.id)} className={styles.link}>
           <DesignCard
             key={card.id ?? `${card.title}-${idx}`}
             title={card.title}
@@ -29,6 +29,7 @@ export default GridColumn;
 GridColumn.propTypes = {
   cards: PropTypes.arrayOf(
     PropTypes.shape({
+      id: PropTypes.number.isRequired,
       title: PropTypes.string.isRequired,
       subTitle: PropTypes.string.isRequired,
       cover: PropTypes.shape({
