@@ -49,6 +49,15 @@ function TemplateItem({ item, projectTitle }) {
     return <MediaItem src={item.file} alt={projectTitle} />;
   }
 
+  if (item.textSection) {
+    return (
+      <TextSection
+        title={item.textSection.title}
+        src={item.textSection.file}
+      />
+    );
+  }
+
   if (item.array) {
     return <MediaGroup items={item.array} projectTitle={projectTitle} />;
   }
@@ -99,6 +108,15 @@ function MediaItem({ src, alt }) {
   }
 
   return null;
+}
+
+function TextSection({ title, src }) {
+  return (
+    <section className={styles.textSection}>
+      <p className={styles.textSectionTitle}>{title}</p>
+      <TextFile src={src} />
+    </section>
+  );
 }
 
 function EmbedVideo({ src }) {
@@ -205,8 +223,17 @@ TemplateItem.propTypes = {
   item: PropTypes.shape({
     file: PropTypes.string,
     array: PropTypes.array,
+    textSection: PropTypes.shape({
+      title: PropTypes.string,
+      file: PropTypes.string,
+    }),
   }),
-  projectTitle: PropTypes.string,
+  projectTitle: PropTypes.string
+};
+
+TextSection.propTypes = {
+  title: PropTypes.string.isRequired,
+  src: PropTypes.string.isRequired,
 };
 
 MediaGroup.propTypes = {

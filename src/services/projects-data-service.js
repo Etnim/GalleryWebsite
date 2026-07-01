@@ -121,6 +121,15 @@ function _mapTemplateItem(projectId, item) {
     };
   }
 
+  if (item.textSection) {
+    return {
+      textSection: {
+        title: item.textSection.title,
+        file: _getFilePath(projectId, item.textSection.file),
+      },
+    };
+  }
+
   if (item.array) {
     return {
       array: item.array.map((nestedItem) =>

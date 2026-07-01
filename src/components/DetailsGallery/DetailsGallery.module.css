@@ -85,7 +85,7 @@
 }
 
 .textBlock {
-  font-family: Onest-Regular, sans-serif;
+font-family: Onest-Regular, sans-serif;
   width: 100%;
   height: 100%;
   color: #000;
@@ -97,6 +97,20 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.textSection {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.textSectionTitle {
+    margin-bottom: 2rem;
+    font-family: Onest-Medium, sans-serif;
+    font-size: 24px;
 }
 
 .footer {

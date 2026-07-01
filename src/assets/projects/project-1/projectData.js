@@ -13,7 +13,17 @@ export const projectDetails = {
       file: "Infineon Truck.png",
     },
     {
-      file: "context.txt",
+      array: [
+        {
+          textSection: {
+            title: "Context",
+            file: "description.txt",
+          }
+        },
+        {
+          textSection: null
+        }
+      ]
     },
     {
       file: "Infineon Main Logo Animation.mp4",
@@ -41,7 +51,7 @@ export const projectDetails = {
         },
         {
           file: "Infineon Main Logo Animation.mp4",
-        }
+        },
       ],
     },
     {
@@ -51,7 +61,7 @@ export const projectDetails = {
         },
         {
           file: "Infineon Main Logo Animation.mp4",
-        }
+        },
       ],
     },
   ],
