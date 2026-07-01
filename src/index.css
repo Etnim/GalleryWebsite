@@ -47,6 +47,32 @@ body {
   /* cursor: url('/cursor.png') 12 12, auto; */
 }
 
+:global(html) {
+    scroll-behavior: auto;
+}
+
+:global(html.lenis),
+:global(html.lenis body) {
+    height: auto;
+}
+
+:global(.lenis.lenis-smooth) {
+    scroll-behavior: auto !important;
+}
+
+:global(.lenis.lenis-smooth [data-lenis-prevent]) {
+    overscroll-behavior: contain;
+}
+
+:global(.lenis.lenis-stopped) {
+    overflow: hidden;
+}
+
+:global(ul) {
+    padding: 0;
+    list-style-type: none;
+}
+
 /* a, .clickable {
   cursor: url('/cursor.png') 13 13, pointer;
 } */

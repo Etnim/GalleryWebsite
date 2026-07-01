@@ -13,15 +13,22 @@ const ProjectDetails = () => {
   return (
     <div key={numericId} className={styles.detailsContainer}>
       <div className={styles.textContainer}>
-        <h1 className={styles.title}>{project?.title}</h1>
-        <ul>
+        <p className={styles.title}>{project?.title}</p>
+        <ul className={styles.projectInfoList}>
           <li>
-            <b className={styles.descriptionDetails}> Year: </b>{" "}
-            <b id={styles.descriptionYear}>{project?.year}</b>{" "}
+            <p>Year: {project?.year}</p>
           </li>
           <li>
-            <b className={styles.descriptionDetails}> Client: </b>{" "}
-            <b id={styles.descriptionClient}>{project?.client}</b>{" "}
+            <p>Type: {project?.type}</p>
+          </li>
+          <li>
+            <p>Client: {project?.client}</p>
+          </li>
+          <li>
+            <p>Role: {project?.role.join(", ")}</p>
+          </li>
+          <li>
+            <p>Status: {project?.status}</p>
           </li>
         </ul>
       </div>

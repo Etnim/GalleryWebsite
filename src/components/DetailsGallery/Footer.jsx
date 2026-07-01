@@ -17,12 +17,22 @@ function Footer({ id }) {
   }
 
   return (
-    <footer>
-      <Link to={getPrevLink(id)}>← Prev</Link>
-      <Link to="/">
-        <img id={styles.logo} src={logo} />
-      </Link>
-      <Link to={getNextLink(id)}>Next →</Link>
+    <footer className={styles.footer}>
+      <ul className={styles.footerList}>
+        <li>
+          <Link to={getPrevLink(id)}>← Prev</Link>
+        </li>
+
+        <li>
+          <Link to="/">
+            <img id={styles.logo} src={logo} />
+          </Link>
+        </li>
+        
+        <li>
+          <Link to={getNextLink(id)}>Next →</Link>
+        </li>
+      </ul>
     </footer>
   );
 }

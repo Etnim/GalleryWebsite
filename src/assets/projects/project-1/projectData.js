@@ -21,23 +21,33 @@ export const projectDetails = {
     {
       array: [
         {
-          file: "context.txt",
+          file: "description.txt",
         },
         {
-          file: "context.txt",
+          file: "description.txt",
         },
       ],
     },
     {
       array: [
         {
-          file: "context.txt",
-        },
-        {
-          file: "description.txt",
+          file: "Infineon Main Logo Animation.mp4",
         },
         {
           file: "Infineon Main Logo Animation.mp4",
+        },
+        {
+          file: "Infineon Main Logo Animation.mp4",
+        },
+        {
+          file: "Infineon Main Logo Animation.mp4",
+        }
+      ],
+    },
+    {
+      array: [
+        {
+          file: "description.txt",
         },
         {
           file: "Infineon Main Logo Animation.mp4",

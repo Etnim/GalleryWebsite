@@ -42,6 +42,7 @@ export function _mapToProjectDetails(projectData) {
     title: projectData.title,
     year: projectData.year,
     type: projectData.type,
+    client: projectData.client,
     role: projectData.role,
     status: projectData.status,
     template: projectData.template.map((item) =>
