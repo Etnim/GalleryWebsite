@@ -1,0 +1,64 @@
+.pageContainer {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 5rem;
+    font-size: 20px;
+    animation: textRevealUp 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.title {
+    margin: 0 0 64px;
+    padding-bottom: 2rem;
+    font-size: 40px;
+    text-align: center;
+    animation: textRevealUp 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-delay: 0.08s;
+}
+
+.pageContainer p {
+    margin: 0 0 1rem;
+}
+
+.contactIcons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0 0;
+    padding: 0;
+}
+
+.contactIcons li {
+    margin: 0;
+    padding: 0;
+}
+
+.contactIcons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.contactIcons a:hover {
+    transform: scale(1.03);
+}
+
+.icon {
+    height: 35px;
+    object-fit: contain;
+    display: block;
+}
+
+@keyframes pageFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,25 +1,34 @@
-import styles from '../styles/AboutContactPages.module.css';
-import contactImage from '../assets/hands.gif';
+import React from "react";
+import styles from "../styles/ContactPage.module.css";
 import linkedIn from "../../public/LinkedInicon.png";
 import gmail from "../../public/GmailIcon.png";
 
-
 export default function Contact() {
-    return <div className={styles.pageContainer}>
-        <h1 className={styles.title}>Contact</h1>
-        <div className={styles.twoColumnLayout}>
-            <div className={styles.leftColumn}>
-                <p id={styles.name}>Ignat Voronovich</p>
-                <p>Vilnius, Lithuania</p>
-                <ul className={styles.contactIcons}>
-                    <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=hol1.visualcraft@gmail.com"
-                        target="_blank">
-                            <img src={gmail} className={styles.icon} />
-                    </a></li>
-                    <li><a href="https://www.linkedin.com/in/holygraphics/" target="_blank"><img src={linkedIn} className={styles.icon}></img></a></li>
-                </ul>
-            </div>
-            <img src={contactImage} className={styles.rightColumn}></img>
-        </div>
-    </div>;
+  return (
+    <div className={styles.pageContainer}>
+      <p className={styles.title}>Contact</p>
+      <p id={styles.name}>Ignat Voronovich</p>
+      <p>Vilnius, Lithuania</p>
+      <ul className={styles.contactIcons}>
+        <li>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=hol1.visualcraft@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={gmail} className={styles.icon} />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/holygraphics/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={linkedIn} className={styles.icon}></img>
+          </a>
+        </li>
+      </ul>
+    </div>
+  );
 }
