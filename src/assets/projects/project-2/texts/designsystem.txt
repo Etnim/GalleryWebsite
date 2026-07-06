@@ -1,5 +1,1 @@
-The logo is designed to scale into a pattern system.
-
-The same square logic used in the mark can expand into grids, backgrounds, packaging textures, interface details, motion frames, and environmental graphics. This gives the brand a cohesive visual language even when the logo is not present.
-
-Such system has one key advantage: it is easy to deploy. It does not depend on complex illustration, photography, or decorative effects. The identity can stay consistent across industrial, digital, and commercial applications.
+The collection was rebuilt as a field archive. I added search, sorting, and grid controls so users could find previous scans by name, date, or tags, then switch the view depending on how much visual detail they needed. The detector gives live magnetic readings with a simple status system, so users can understand the result before reading raw sensor data.

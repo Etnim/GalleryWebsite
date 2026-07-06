@@ -51,8 +51,8 @@ export const projectDetails = {
       array: [
         {
           textSection: {
-            title: "Logotype",
-            file: "logotype.txt",
+            title: "Field Tools",
+            file: "designsystem.txt",
           }
         },
         {
