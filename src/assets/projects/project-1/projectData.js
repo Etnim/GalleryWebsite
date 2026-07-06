@@ -3,14 +3,14 @@ export const projectDetails = {
   title: "Infineon",
   subTitle: "Brand Identity",
   coverFileName: "Infineon Cover.png",
-  type: "Concept Rebranding",
-  client: "Infineon Technologies",
-  role: ["Brand Designer", "Graphic Designer"],
+  type: "Concept · Rebranding",
+  client: "Infineon Technologies, Germany",
+  role: ["Brand Designer · Graphic Designer"],
   status: "Completed",
   year: "2024",
   template: [
     {
-      file: "Infineon Truck.png",
+      file: "Microchip Glowing GIF.gif",
     },
     {
       array: [
@@ -22,11 +22,46 @@ export const projectDetails = {
         },
         {
           textSection: {
-            title: "bkdskhf",
-            file: "description.txt",
+            title: "Research",
+            file: "research.txt",
+        }
+      }
+      ]
+    },
+    {
+      file: "Infineon 2nd Split.mp4",
+    },
+    {
+      array: [
+        {
+          textSection: {
+            title: "Solution",
+            file: "solution.txt",
           }
         },
+        {
+          textSection: null
+      }
       ]
+    },
+    {
+      file: "Infineon 1st Split.mp4",
+    },
+    {
+      array: [
+        {
+          textSection: {
+            title: "Logotype",
+            file: "logotype.txt",
+          }
+        },
+        {
+          textSection: null
+      }
+      ]
+    },
+    {
+      file: "Before After.png",
     },
     {
       file: "Infineon Main Logo Animation.mp4",
@@ -34,38 +69,46 @@ export const projectDetails = {
     {
       array: [
         {
-          file: "description.txt",
+          textSection: {
+            title: "Design System",
+            file: "designsystem.txt",
+          }
         },
         {
-          file: "description.txt",
-        },
-      ],
+          textSection: null
+      }
+      ]
+    },
+    {
+      file: "Infineon Packaging Alpha.png",
+    },
+    {
+      file: "Citylight_Posters 1.png",
+    },
+    {
+      file: "Infineon Lights On.png",
     },
     {
       array: [
         {
-          file: "Infineon Main Logo Animation.mp4",
+          textSection: {
+            title: "Results",
+            file: "results.txt",
+          }
         },
         {
-          file: "Infineon Main Logo Animation.mp4",
-        },
-        {
-          file: "Infineon Main Logo Animation.mp4",
-        },
-        {
-          file: "Infineon Main Logo Animation.mp4",
-        },
-      ],
+          textSection: null
+      }
+      ]
     },
     {
-      array: [
-        {
-          file: "description.txt",
-        },
-        {
-          file: "Infineon Main Logo Animation.mp4",
-        },
-      ],
+      file: "Truck Mockup.png",
+    },
+    {
+      file: "App Website Slide.png",
+    },
+    {
+      file: "Infineon Flag.png",
     },
   ],
 };

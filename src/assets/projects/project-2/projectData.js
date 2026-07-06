@@ -1,45 +1,68 @@
 export const projectDetails = {
   id: 2,
-  title: "Infineon",
-  subTitle: "Brand Identity",
-  coverFileName: "InfineonCover.png",
-  type: "Concept Rebranding",
-  client: "Infineon Technologies",
-  role: ["Brand Designer", "Graphic Designer"],
-  status: "Completed",
-  year: "2024",
+  title: "Rock Sense",
+  subTitle: "Mobile App",
+  coverFileName: "Rock Sense.png",
+  type: "Mobile Application",
+  client: "Nature Research Centre, Lithuania",
+  role: ["Product Designer"],
+  status: "In development",
+  year: "2026",
   template: [
     {
-      file: "Infineon Truck.png",
-    },
-    {
-      file: "context.txt",
-    },
-    {
-      file: "Infineon Main Logo Animation.mp4",
+      file: "Rock Sense Logo.png",
     },
     {
       array: [
         {
-          file: "context.txt",
+          textSection: {
+            title: "Context",
+            file: "description.txt",
+          }
         },
         {
-          file: "context.txt",
-        },
-      ],
+          textSection: {
+            title: "Research",
+            file: "research.txt",
+        }
+      }
+      ]
+    },
+    {
+      file: "Rock Sense App Icon.png",
     },
     {
       array: [
         {
-          file: "context.txt",
+          textSection: {
+            title: "Solution",
+            file: "solution.txt",
+          }
         },
         {
-          file: "description.txt",
-        },
-        {
-          file: "Infineon Main Logo Animation.mp4",
-        },
-      ],
+          textSection: null
+      }
+      ]
     },
+    {
+      file: "Rock Sense Collage Brown.png",
+    },
+    {
+      array: [
+        {
+          textSection: {
+            title: "Logotype",
+            file: "logotype.txt",
+          }
+        },
+        {
+          textSection: null
+      }
+      ]
+    },
+    {
+      file: "Rock Sense Collage Brown 2.png",
+    },
+
   ],
 };

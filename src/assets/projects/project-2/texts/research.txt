@@ -1,1 +1,1 @@
-research bla bla bla
+The original version of Rock Sense was fully made by AI. Therefore not only it was inefficient, but also extremely generic, blending with other rock scanners in Play Store. Keeping in mind the target audience of the app being geologists, the new design had to follow a serious, grounded visual path and be clear enough for its senior users.
