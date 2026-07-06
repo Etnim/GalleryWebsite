@@ -23,7 +23,7 @@
 
 .footerGallery {
   margin: 0;
-  font-size: 24px;
+  font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,16 +52,41 @@
   }
 }
 
+
 @media (max-width: 800px) {
   .gallery {
     flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
 
-    margin: 1rem 4% 6.25rem;
-    padding: 1rem 0;
+    width: 100%;
+    margin: 3rem auto 6.25rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+    box-sizing: border-box;
   }
 
   .gridColumn {
+    width: 100%;
+    max-width: 32rem;
+    min-width: 0;
     flex: none;
-    width: 40rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .link {
+    width: 100%;
+    display: block;
+  }
+
+  .title {
+    font-size: clamp(48px, 10vw, 72px);
+  }
+
+  .footerGallery {
+    font-size: 18px;
   }
 }

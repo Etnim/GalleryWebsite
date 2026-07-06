@@ -1,8 +1,11 @@
 import React from "react";
 import styles from "../styles/AboutPage.module.css";
 import drawing from "../assets/about-page-drawing.jpg";
+import useLenisScroll from "../hooks/useLenisScroll";
 
 export default function About() {
+  useLenisScroll();
+
   return (
     <div className={styles.pageContainer}>
       <p className={styles.title}>About</p>

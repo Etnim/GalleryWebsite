@@ -55,14 +55,25 @@ nav a:hover {
 }
 
 .logoLink {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
 }
 
 .logo {
-  height: 1.25em;
-  display: block;
-  object-fit: contain;
+    height: 1.25em;
+    display: block;
+    object-fit: contain;
+}
+
+@media (max-width: 800px) {
+    nav {
+        top: 1rem;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
 }

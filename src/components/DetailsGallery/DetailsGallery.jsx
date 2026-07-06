@@ -20,7 +20,7 @@ function DetailsGallery({ id }) {
   }
 
   return (
-    <section>
+    <section className={styles.detailesGalleryContainer}>
       <TemplateList template={project.template} projectTitle={project.title} />
     </section>
   );

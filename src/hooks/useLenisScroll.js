@@ -29,7 +29,6 @@ export default function useLenisScroll(options = {}) {
     }
 
     animationFrameId = window.requestAnimationFrame(raf);
-    console.log("[useLenisScroll] animation started", animationFrameId);
 
     return () => {
       window.cancelAnimationFrame(animationFrameId);

@@ -97,7 +97,6 @@ function _getFolderByFileExtension(fileName) {
 
 function _getCoverType(coverFileName) {
   const extension = _getFileExtension(coverFileName);
-  console.log("Cover file extension:", extension);
 
   if (IMAGE_EXTENSIONS.includes(extension)) {
     return "image";

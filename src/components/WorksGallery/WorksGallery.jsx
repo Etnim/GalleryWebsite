@@ -6,18 +6,11 @@ import useLenisScroll from "../../hooks/useLenisScroll";
 
 const buildColumns = (cards, columns) => {
   const out = Array.from({ length: columns }, () => []);
-  let start = 0,
-    i = 0;
+  let i = 0;
 
   while (i < cards.length) {
-    for (let j = start; j < columns && i < cards.length; j++) {
+    for (let j = 0; j < columns && i < cards.length; j++) {
       out[j].push(cards[i++]);
-    }
-
-    start = (start + 1) % columns;
-
-    if (i % 4 === 0) {
-      start++;
     }
   }
 
@@ -26,10 +19,6 @@ const buildColumns = (cards, columns) => {
 
 function Gallery({ listOfCards, columns = 2 }) {
   const cards = listOfCards ?? [];
-  console.log("[WorksGallery] render", {
-    cardsCount: cards.length,
-    columns,
-  });
 
   const galleryColumns = buildColumns(cards, columns);
 
