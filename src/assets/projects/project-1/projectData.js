@@ -21,8 +21,11 @@ export const projectDetails = {
           }
         },
         {
-          textSection: null
-        }
+          textSection: {
+            title: "bkdskhf",
+            file: "description.txt",
+          }
+        },
       ]
     },
     {

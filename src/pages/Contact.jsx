@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/ContactPage.module.css";
-import linkedIn from "../../public/LinkedInicon.png";
-import gmail from "../../public/GmailIcon.png";
+import linkedIn from "/LinkedInicon.png";
+import gmail from "/GmailIcon.png";
 
 export default function Contact() {
   return (

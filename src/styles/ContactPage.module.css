@@ -3,7 +3,7 @@
     margin-top: 100px;
     margin-bottom: 5rem;
     font-size: 20px;
-    animation: textRevealUp 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation: pageFadeIn 0.9s ease;
 }
 
 .title {
@@ -52,13 +52,26 @@
 }
 
 @keyframes pageFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes textRevealUp {
     from {
         opacity: 0;
-        transform: translateY(10px);
+        transform: translateY(48px);
+        filter: blur(8px);
     }
 
     to {
         opacity: 1;
         transform: translateY(0);
+        filter: blur(0);
     }
 }

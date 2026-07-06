@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "./Header.module.css";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import shouldShowComponentBasedOnScroll from "../../hooks/shouldShowComponentBasedOnScroll";
-import logo from "../../../public/WhiteLogo.png";
+import NavigationBar from "../NavigationBar/NavigationBar";
+import styles from "../NavigationBar/NavigationBar.module.css";
 
 function Header() {
   const location = useLocation();
@@ -13,23 +13,11 @@ function Header() {
   });
 
   return (
-    <nav
-      className={`${isNavVisible ? styles.navVisible : styles.navHidden}`}
-    >
-      <ul>
-        <li>
-          <Link to="/contact/">Contacts</Link>
-        </li>
-        <li>
-          <Link to="/">
-            <img id={styles.logo} src={logo} alt="Holy Graphics logo" />
-          </Link>
-        </li>
-        <li>
-          <Link to="/about/">About me</Link>
-        </li>
-      </ul>
-    </nav>
+    <NavigationBar
+      navClassName={isNavVisible ? styles.navVisible : styles.navHidden}
+      leftlink={{ link: "/contact/", text: "Contacts" }}
+      rightlink={{ link: "/about/", text: "About me" }}
+    />
   );
 }
 

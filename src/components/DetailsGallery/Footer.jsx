@@ -1,8 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
-import logo from "../../../public/WhiteLogo.png";
 import styles from "./DetailsGallery.module.css";
+import NavigationBar from "../NavigationBar/NavigationBar";
 import { getWorksAmount } from "../../services/projects-data-service.js";
 
 function Footer({ id }) {
@@ -17,23 +16,11 @@ function Footer({ id }) {
   }
 
   return (
-    <footer className={styles.footer}>
-      <ul className={styles.footerList}>
-        <li>
-          <Link to={getPrevLink(id)}>← Prev</Link>
-        </li>
-
-        <li>
-          <Link to="/">
-            <img id={styles.logo} src={logo} />
-          </Link>
-        </li>
-        
-        <li>
-          <Link to={getNextLink(id)}>Next →</Link>
-        </li>
-      </ul>
-    </footer>
+    <NavigationBar
+      navClassName={styles.footer}
+      leftlink={{ link: getPrevLink(id), text: "← Prev" }}
+      rightlink={{ link: getNextLink(id), text: "Next →" }}
+    />
   );
 }
 export default Footer;

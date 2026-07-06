@@ -55,7 +55,7 @@ export function _mapToProject(projectData) {
   return {
     id: projectData.id,
     title: projectData.title,
-    subtitle: projectData.subTitle,
+    subTitle: projectData.subTitle,
     cover: {
       type: _getCoverType(projectData.coverFileName),
       src: _getFilePath(projectData.id, projectData.coverFileName),

@@ -1,30 +1,53 @@
-.aboutPageDrawing {
-    height: auto;
-    width: 50%;
+.pageContainer {
+    font-family: Onest-Regular, sans-serif;
+    font-size: 20px;
+    margin: 100px 12% 2rem;
+    text-align: center;
+    animation: pageFadeIn 0.9s ease;
 }
 
 .title {
+    margin: 0 0 64px;
+    padding-bottom: 2rem;
+    font-size: 40px;
     text-align: center;
-    font-size: 100px;
-    margin: 0;
+    animation: textRevealUp 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-delay: 0.08s;
 }
 
-.textContainer {
-    text-align: center;
-    font-family: Satoshi-Light, sans-serif;
-    font-size: 28px;
-    margin-top: 4rem;
-    padding: 0;
+.subtitle {
+    font-family: Onest-Medium, sans-serif;
+    font-size: 24px;
+    margin-bottom: 2rem;
 }
 
-.pageContainer {
-    text-align: center;
-    margin: 0 15rem;
-    font-size: 20px;
-    font-family: Satoshi-Light, sans-serif;
-    margin-bottom: 5rem;
-    text-align: center;
-    animation: pageFadeIn 0.9s ease;
+.textBlock {
+  margin-bottom: 4rem;
+}
+
+.infoContainer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  column-gap: 6rem;
+  align-items: center;
+  width: 100%;
+}
+
+.textColumn {
+  min-width: 0;
+  text-align: left;
+}
+
+.imageColumn {
+  min-width: 0;
+}
+
+.aboutPageDrawing {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 20px;
 }
 
 @keyframes pageFadeIn {
@@ -36,6 +59,20 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@keyframes textRevealUp {
+    from {
+        opacity: 0;
+        transform: translateY(48px);
+        filter: blur(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
 }
 
 .twoColumnLayout {
@@ -56,32 +93,6 @@
 .rightColumn {
     height: auto;
     flex: 0.8;
-}
-
-ul.contactIcons {
-    display: flex;
-    gap: 1.5rem;
-    padding: 0;
-    margin-top: 3rem;
-}
-
-#name {
-    font-family: Satoshi-Bold, sans-serif;
-    font-size: 24px;
-}
-
-#she {
-    text-decoration: underline;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-.icon {
-    height: 35px;
-    object-fit: contain;
 }
 
 @media (max-width: 800px) {
