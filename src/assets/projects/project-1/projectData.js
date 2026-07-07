@@ -102,7 +102,7 @@ export const projectDetails = {
       ]
     },
     {
-      file: "Truck Mockup.png",
+      file: "Infineon Truck.png",
     },
     {
       file: "App Website Slide.png",
