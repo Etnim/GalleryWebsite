@@ -2,7 +2,7 @@ export const projectDetails = {
   id: 2,
   title: "Rock Sense",
   subTitle: "Mobile App",
-  coverFileName: "Rock Sense.png",
+  coverFileName: "Rock Sense Cover.jpg",
   type: "Mobile Application",
   client: "Nature Research Centre, Lithuania",
   role: ["Product Designer"],
