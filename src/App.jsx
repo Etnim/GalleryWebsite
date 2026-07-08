@@ -10,6 +10,7 @@ import {
   createRoutesFromElements,
   RouterProvider,
 } from "react-router-dom";
+import NotFound from "./pages/NotFound.jsx";
 
 export default function App() {
   const router = createHashRouter(
@@ -19,6 +20,8 @@ export default function App() {
         <Route path=":id" element={<ProjectDetails />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
+
+        <Route path="*" element={<NotFound />} />
       </Route>,
     ),
   );

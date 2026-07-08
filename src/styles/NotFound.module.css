@@ -1,0 +1,134 @@
+.container {
+  font-family: Onest-Medium, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  animation: pageFadeIn 0.9s ease;
+
+  height: calc(100svh - 120px);
+  margin: 0 12%;
+  padding: 2rem 0;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 40px;
+  line-height: 1.1;
+  text-align: center;
+
+  margin: 0 0 2rem;
+
+  animation: textRevealUp 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: 0.08s;
+}
+
+.gifContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  margin: 0 0 2rem;
+
+  animation: textRevealUp 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: 0.18s;
+}
+
+.gifContainer img {
+  display: block;
+  width: min(380px, 100%);
+  max-height: 45svh;
+  height: auto;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.linkContainer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #F4F6F7;
+  border-radius: 20px;
+
+  animation: textRevealUp 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: 0.28s;
+}
+
+.notFoundLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.5rem 1.1rem;
+
+  text-decoration: none;
+  color: inherit;
+  font-size: 20px;
+
+  transition: transform 180ms ease;
+}
+
+.notFoundLink:hover {
+    transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 2rem 4vw 1rem;
+    font-size: 16px;
+
+    min-height: calc(100svh - 8rem);
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 1.12;
+    margin-bottom: 1.5rem;
+  }
+
+  .gifContainer {
+    margin-bottom: 1.5rem;
+  }
+
+  .gifContainer img {
+    width: min(320px, 86vw);
+    border-radius: 20px;
+  }
+
+  .notFoundLink {
+    font-size: 18px;
+    padding: 0.5rem 1.1rem;
+  }
+}
+
+
+@keyframes pageFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes textRevealUp {
+    from {
+        opacity: 0;
+        transform: translateY(48px);
+        filter: blur(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}

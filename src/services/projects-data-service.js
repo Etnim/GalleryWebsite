@@ -24,7 +24,7 @@ export function getProjectDetailsById(id) {
   );
 
   if (!projectDataModule) {
-    throw new Error(`Project not found: ${id}`);
+    return null;
   }
 
   return _mapToProjectDetails(projectDataModule.projectDetails);

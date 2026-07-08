@@ -4,11 +4,19 @@ import { getProjectDetailsById } from "../services/projects-data-service.js";
 import DetailsGallery from "../components/DetailsGallery/DetailsGallery";
 import styles from "../components/DetailsGallery/DetailsGallery.module.css";
 import Footer from "../components/DetailsGallery/Footer.jsx";
+import NotFound from "./NotFound.jsx";
 
 const ProjectDetails = () => {
   const { id } = useParams();
   const numericId = Number(id);
   const project = getProjectDetailsById(numericId);
+
+   if (!project) {
+    return <NotFound />;
+  }
+
+    console.log("Project details:", project);
+
 
   return (
     <div key={numericId} className={styles.detailsContainer}>
