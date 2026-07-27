@@ -14,8 +14,8 @@ export default function About() {
           <div className={styles.textBlock}>
             <p className={styles.subtitle}>Background</p>
             <p>
-              Hi, I’m Ignat - product designer in Vilnius.
-4 years as a graphic designer, specializing in visual identities. In 2026 decided to go deeper and switched to mastering product design.
+              Hi, I’m Ignat - designer based in Vilnius.
+4 years as a graphic designer, specializing in visual identities. Attained Bachelor and Master of Art degrees in the design field. Additionally, I practice designing mobile and web applications.
             </p>
           </div>
           <div className={styles.textBlock}>
