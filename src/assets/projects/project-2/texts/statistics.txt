@@ -1,0 +1,1 @@
+The statistics screen was rebuilt from a dense dashboard into a glanceable field summary. I removed stacked cards, progress bars, and secondary metrics, then focused the screen on three core layers: total scans, sample categories, and average hardness.
