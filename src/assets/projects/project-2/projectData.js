@@ -45,7 +45,7 @@ export const projectDetails = {
       ]
     },
     {
-      file: "3 Main Screens.png",
+      file: "Rock Sense Presentation Screen 1.png",
     },
     {
       array: [
@@ -61,7 +61,7 @@ export const projectDetails = {
       ]
     },
     {
-      file: "Rock Identification.png",
+      file: "Rock Sense Presentation Screen 2.png",
     },
 {
       array: [
@@ -77,10 +77,10 @@ export const projectDetails = {
       ]
     },
     {
-      file: "Analysis Result - Description.png",
+      file: "Rock Sense Presentation Screen 3.png",
     },
     {
-      file: "Analysis Result - Value.png",
+      file: "Rock Sense Presentation Screen 4.png",
     },
     {
       array: [
@@ -96,7 +96,7 @@ export const projectDetails = {
       ]
     },
     {
-      file: "Premium.png",
+      file: "Rock Sense Presentation Screen 5.png",
     },
     {
       array: [
@@ -112,7 +112,7 @@ export const projectDetails = {
       ]
     },
     {
-      file: "Detector and Statistics.png",
+      file: "Rock Sense Presentation Screen 6.png",
     },
     {
       array: [
@@ -128,7 +128,23 @@ export const projectDetails = {
       ]
     },
     {
-      file: "Collection.png",
+      file: "Rock Sense Presentation Screen 7.png",
+    },
+    {
+      array: [
+        {
+          textSection: {
+            title: "Sort, filter and search",
+            file: "sortfilterandsearch.txt",
+          }
+        },
+        {
+          textSection: null
+      }
+      ]
+    },
+    {
+      file: "Rock Sense Presentation Screen 8.png",
     },
     {
       array: [
@@ -144,7 +160,7 @@ export const projectDetails = {
       ]
     },
     {
-      file: "History.png",
+      file: "Rock Sense Presentation Screen 9.png",
     },
     {
       array: [
@@ -160,7 +176,7 @@ export const projectDetails = {
       ]
     },
     {
-      file: "Icon Set.png",
+      file: "Rock Sense Presentation Screen 10.png",
     },
   ],
 };
