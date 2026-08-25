@@ -12,7 +12,7 @@ export default function Contact() {
       <ul className={styles.contactIcons}>
         <li>
           <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=hol1.visualcraft@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=ho1y.visualcraft@gmail.com"
             target="_blank"
             rel="noreferrer"
           >
