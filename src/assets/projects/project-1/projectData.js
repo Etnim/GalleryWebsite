@@ -2,7 +2,7 @@ export const projectDetails = {
   id: 1,
   title: "Infineon",
   subTitle: "Brand Identity",
-  coverFileName: "Infineon Cover.png",
+  coverFileName: "Infineon - Cover.png",
   type: "Concept · Rebranding",
   client: "Infineon Technologies, Germany",
   role: ["Brand Designer · Graphic Designer"],

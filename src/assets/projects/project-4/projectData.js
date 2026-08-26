@@ -2,7 +2,7 @@ export const projectDetails = {
   id: 4,
   title: "Workbench",
   subTitle: "Design Collection",
-  coverFileName: "Terraform Squared Cover.png",
+  coverFileName: "Workbench - Cover.png",
   type: "Product concepts · UI · Graphic design",
   client: "Various",
   role: ["Product Designer · Graphic Designer"],

@@ -2,7 +2,7 @@ export const projectDetails = {
   id: 2,
   title: "Rock Sense",
   subTitle: "Mobile App",
-  coverFileName: "Rock Sense Cover.jpg",
+  coverFileName: "Rock Sense - Cover.png",
   type: "Mobile Application",
   client: "Nature Research Centre, Lithuania",
   role: ["Product Designer"],
@@ -177,6 +177,22 @@ export const projectDetails = {
     },
     {
       file: "Rock Sense Presentation Screen 10.png",
+    },
+    {
+      array: [
+        {
+          textSection: {
+            title: "Results",
+            file: "results.txt",
+          }
+        },
+        {
+          textSection: null
+      }
+      ]
+    },
+    {
+      file: "Rock Sense Presentation Screen 11.png",
     },
   ],
 };

@@ -2,7 +2,7 @@ export const projectDetails = {
   id: 3,
   title: "Holy",
   subTitle: "Brand Identity",
-  coverFileName: "Cover.png",
+  coverFileName: "Holy - Cover.png",
   type: "Personal · Brand Identity",
   client: "Myself",
   role: ["Brand Designer · Graphic Designer"],
