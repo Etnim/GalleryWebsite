@@ -16,12 +16,15 @@ export const projectDetails = {
      file: "Kika Presentation Screen LT.png"
     },
     {
+     file: "Stalker Gamma Presentation Screen EN 1.png"
+    },
+    {
       array: [
       {
-      file: "photo-1.png"
+      file: "Stalker Gamma Presentation Screen 2.png"
       },
      {
-      file: "photo-2.png",
+      file: "Stalker Gamma Presentation Screen 3.png",
     }
       ]
     },
