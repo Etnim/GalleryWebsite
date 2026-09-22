@@ -21,10 +21,10 @@ export const projectDetails = {
     {
       array: [
       {
-      file: "Stalker Gamma Presentation Screen 2.png"
+      file: "Equipment Box 1.png"
       },
      {
-      file: "Stalker Gamma Presentation Screen 3.png",
+      file: "Equipment Box 2.png",
     }
       ]
     },

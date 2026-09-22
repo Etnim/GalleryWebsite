@@ -6,7 +6,7 @@ export const projectDetails = {
   type: "Mobile Application",
   client: "Nature Research Centre, Lithuania",
   role: ["Product Designer"],
-  status: "Handed off · Building",
+  status: "Shipped",
   year: "2026",
   template: [
     {
