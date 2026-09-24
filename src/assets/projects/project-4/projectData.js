@@ -29,6 +29,15 @@ export const projectDetails = {
       ]
     },
     {
+     file: "Humanified - Empty State Presentation.png"
+    },
+    {
+     file: "Humanified - Filled State Presentation.png"
+    },
+    {
+     file: "Humanified - Result State Presentation.png"
+    },
+    {
      file: "Terraform - Hero Animation.mp4"
     },
     {
