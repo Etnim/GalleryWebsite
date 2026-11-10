@@ -1,16 +1,16 @@
 export const projectDetails = {
   id: 3,
-  title: "Holy",
+  title: "Infineon",
   subTitle: "Brand Identity",
-  coverFileName: "Holy - Cover.png",
-  type: "Personal · Brand Identity",
-  client: "Myself",
+  coverFileName: "Infineon - Cover.png",
+  type: "Concept · Rebranding",
+  client: "Infineon Technologies, Germany",
   role: ["Brand Designer · Graphic Designer"],
   status: "Completed",
   year: "2024",
   template: [
     {
-      file: "Holy - Main Composition Black Background.mp4",
+      file: "Microchip Glowing GIF.gif",
     },
     {
       array: [
@@ -29,7 +29,7 @@ export const projectDetails = {
       ]
     },
     {
-      file: "png holy sequence.mp4",
+      file: "Infineon 2nd Split.mp4",
     },
     {
       array: [
@@ -45,7 +45,7 @@ export const projectDetails = {
       ]
     },
     {
-      file: "Version 6.mp4",
+      file: "Infineon 1st Split.mp4",
     },
     {
       array: [
@@ -61,14 +61,17 @@ export const projectDetails = {
       ]
     },
     {
-      file: "Logotype Slide.png",
+      file: "Before After.png",
+    },
+    {
+      file: "Infineon Main Logo Animation.mp4",
     },
     {
       array: [
         {
           textSection: {
-            title: "Judo",
-            file: "judo.txt",
+            title: "Design System",
+            file: "designsystem.txt",
           }
         },
         {
@@ -77,54 +80,13 @@ export const projectDetails = {
       ]
     },
     {
-      file: "Judo - 1.jpg",
+      file: "Infineon Packaging Alpha.png",
     },
     {
-      file: "Judo - 2.jpg",
+      file: "Citylight_Posters 1.png",
     },
     {
-      file: "Judo Sparring Colors.mp4",
-    },
-    {
-      array: [
-        {
-          textSection: {
-            title: "Tea",
-            file: "tea.txt",
-          }
-        },
-        {
-          textSection: null
-      }
-      ]
-    },
-    {
-      file: "Tea 1.jpg",
-    },
-    {
-      file: "Tea - 2.jpg",
-    },
-    {
-      file: "Holy Tea Pouring Color.mp4",
-    },
-    {
-      array: [
-        {
-          textSection: {
-            title: "Meditation",
-            file: "meditation.txt",
-          }
-        },
-        {
-          textSection: null
-      }
-      ]
-    },
-    {
-      file: "Soul 1.png",
-    },
-    {
-      file: "Soul 2.png",
+      file: "Infineon Lights On.png",
     },
     {
       array: [
@@ -140,10 +102,13 @@ export const projectDetails = {
       ]
     },
     {
-      file: "Slide 16_9 - 1.png",
+      file: "Infineon Truck.png",
     },
     {
-      file: "Holy Final Slide.png",
+      file: "App Website Slide.png",
+    },
+    {
+      file: "Infineon Flag.png",
     },
   ],
 };

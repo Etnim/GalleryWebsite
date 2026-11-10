@@ -1,0 +1,1 @@
+Humanified lets users manually edit generated text or rewrite individual sentences without processing the entire document again. Only the selected words count toward their allowance, while Previous and Next controls let users compare drafts and revisit earlier versions.

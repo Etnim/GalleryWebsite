@@ -1,16 +1,16 @@
 export const projectDetails = {
   id: 1,
-  title: "Infineon",
-  subTitle: "Brand Identity",
-  coverFileName: "Infineon - Cover.png",
-  type: "Concept · Rebranding",
-  client: "Infineon Technologies, Germany",
-  role: ["Brand Designer · Graphic Designer"],
-  status: "Completed",
-  year: "2024",
+  title: "Humanified",
+  subTitle: "Web App",
+  coverFileName: "Kreemikas-oranžilise padjaga Humanified sülearvuti 1.png",
+  type: "Web Application",
+  client: "Zenko Apps, Lithuania",
+  role: ["Product Designer"],
+  status: "In progress",
+  year: "2026",
   template: [
     {
-      file: "Microchip Glowing GIF.gif",
+      file: "Humanified - Demo 2.mp4",
     },
     {
       array: [
@@ -29,7 +29,7 @@ export const projectDetails = {
       ]
     },
     {
-      file: "Infineon 2nd Split.mp4",
+      file: "Humanified - Demo 1.mp4",
     },
     {
       array: [
@@ -45,14 +45,14 @@ export const projectDetails = {
       ]
     },
     {
-      file: "Infineon 1st Split.mp4",
+      file: "Humanified - Demo 3.mp4",
     },
     {
       array: [
         {
           textSection: {
-            title: "Logotype",
-            file: "logotype.txt",
+            title: "Output control",
+            file: "rock identification.txt",
           }
         },
         {
@@ -61,54 +61,8 @@ export const projectDetails = {
       ]
     },
     {
-      file: "Before After.png",
+      file: "Humanified - Demo 4.mp4",
     },
-    {
-      file: "Infineon Main Logo Animation.mp4",
-    },
-    {
-      array: [
-        {
-          textSection: {
-            title: "Design System",
-            file: "designsystem.txt",
-          }
-        },
-        {
-          textSection: null
-      }
-      ]
-    },
-    {
-      file: "Infineon Packaging Alpha.png",
-    },
-    {
-      file: "Citylight_Posters 1.png",
-    },
-    {
-      file: "Infineon Lights On.png",
-    },
-    {
-      array: [
-        {
-          textSection: {
-            title: "Results",
-            file: "results.txt",
-          }
-        },
-        {
-          textSection: null
-      }
-      ]
-    },
-    {
-      file: "Infineon Truck.png",
-    },
-    {
-      file: "App Website Slide.png",
-    },
-    {
-      file: "Infineon Flag.png",
-    },
+    
   ],
 };

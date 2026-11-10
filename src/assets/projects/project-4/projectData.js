@@ -1,83 +1,146 @@
 export const projectDetails = {
   id: 4,
-  title: "Workbench",
-  subTitle: "Design Collection",
-  coverFileName: "Workbench - Cover.png",
-  type: "Product concepts · UI · Graphic design",
-  client: "Various",
-  role: ["Product Designer · Graphic Designer"],
-  status: "Constantly updating",
-  year: "2024-2026",
+  title: "Holy",
+  subTitle: "Brand Identity",
+  coverFileName: "Holy - Cover.png",
+  type: "Personal · Brand Identity",
+  client: "Myself",
+  role: ["Brand Designer · Graphic Designer"],
+  status: "Completed",
+  year: "2024",
   template: [
     {
-     file: "Swedbank Presentation Screen LT.png"
-    },
- {
-     file: "Kika Presentation Screen LT.png"
-    },
-    {
-     file: "Stalker Gamma Presentation Screen EN 1.png"
+      file: "Holy - Main Composition Black Background.mp4",
     },
     {
       array: [
-      {
-      file: "Equipment Box 1.png"
-      },
-     {
-      file: "Equipment Box 2.png",
-    }
+        {
+          textSection: {
+            title: "Context",
+            file: "description.txt",
+          }
+        },
+        {
+          textSection: {
+            title: "Research",
+            file: "research.txt",
+        }
+      }
       ]
     },
     {
-     file: "Humanified 11.png"
+      file: "png holy sequence.mp4",
     },
     {
       array: [
-      {
-      file: "Humanified 13.png"
-      },
-     {
-      file: "Humanified 14.png",
-    }
+        {
+          textSection: {
+            title: "Solution",
+            file: "solution.txt",
+          }
+        },
+        {
+          textSection: null
+      }
       ]
     },
     {
-     file: "Humanified 6.png"
-    },
-    {
-     file: "Terraform - Hero Animation.mp4"
-    },
-    {
-     file: "photo-4.png"
+      file: "Version 6.mp4",
     },
     {
       array: [
-      {
-      file: "photo-5.png"
-      },
-     {
-      file: "photo-6.png",
-    }
+        {
+          textSection: {
+            title: "Logotype",
+            file: "logotype.txt",
+          }
+        },
+        {
+          textSection: null
+      }
       ]
     },
     {
-     file: "Horizontal_Prussian_White BG.png"
-    },
-    {
-     file: "photo-7.png"
+      file: "Logotype Slide.png",
     },
     {
       array: [
-      {
-      file: "photo-8.png"
-      },
-     {
-      file: "photo-9.png",
-    }
+        {
+          textSection: {
+            title: "Judo",
+            file: "judo.txt",
+          }
+        },
+        {
+          textSection: null
+      }
       ]
     },
     {
-     file: "PCM - Main Logo Animation.mp4"
+      file: "Judo - 1.jpg",
     },
-  ]
+    {
+      file: "Judo - 2.jpg",
+    },
+    {
+      file: "Judo Sparring Colors.mp4",
+    },
+    {
+      array: [
+        {
+          textSection: {
+            title: "Tea",
+            file: "tea.txt",
+          }
+        },
+        {
+          textSection: null
+      }
+      ]
+    },
+    {
+      file: "Tea 1.jpg",
+    },
+    {
+      file: "Tea - 2.jpg",
+    },
+    {
+      file: "Holy Tea Pouring Color.mp4",
+    },
+    {
+      array: [
+        {
+          textSection: {
+            title: "Meditation",
+            file: "meditation.txt",
+          }
+        },
+        {
+          textSection: null
+      }
+      ]
+    },
+    {
+      file: "Soul 2.png",
+    },
+    {
+      array: [
+        {
+          textSection: {
+            title: "Results",
+            file: "results.txt",
+          }
+        },
+        {
+          textSection: null
+      }
+      ]
+    },
+    {
+      file: "Slide 16_9 - 1.png",
+    },
+    {
+      file: "Holy Final Slide.png",
+    },
+  ],
 };
