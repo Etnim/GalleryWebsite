@@ -1,0 +1,1 @@
+Humanified's rewriting model is tested against four leading AI detectors, which are seen above the output panel. Users can explore the differences between Basic and Pro models through informative popovers, comparing context awareness, meaning preservation, and suitability for different texts.

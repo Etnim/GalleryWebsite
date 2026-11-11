@@ -1,0 +1,1 @@
+In-built language selector lets users choose their preferred language for text output, effectively humanizing text from one language to another. Retry button generates an alternative version of the same text without requiring users to start over, making it easier to compare results and avoiding unnecessary rewrites.

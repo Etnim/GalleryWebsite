@@ -2,7 +2,7 @@ export const projectDetails = {
   id: 5,
   title: "Workbench",
   subTitle: "Design Collection",
-  coverFileName: "Workbench - Cover.png",
+  coverFileName: "Workbench - Cover.jpg",
   type: "Product concepts · UI · Graphic design",
   client: "Various",
   role: ["Product Designer · Graphic Designer"],

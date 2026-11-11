@@ -2,7 +2,7 @@ export const projectDetails = {
   id: 1,
   title: "Humanified",
   subTitle: "Web App",
-  coverFileName: "Kreemikas-oranžilise padjaga Humanified sülearvuti 1.png",
+  coverFileName: "Kreemikas-oranžilise padjaga Humanified sülearvuti 1.jpg",
   type: "Web Application",
   client: "Zenko Apps, Lithuania",
   role: ["Product Designer"],
@@ -45,14 +45,14 @@ export const projectDetails = {
       ]
     },
     {
-      file: "Humanified - Demo 3.mp4",
+      file: "Humanified - Demo 3 compressed.mp4",
     },
     {
       array: [
         {
           textSection: {
             title: "Output control",
-            file: "rock identification.txt",
+            file: "Output control.txt",
           }
         },
         {
@@ -61,8 +61,31 @@ export const projectDetails = {
       ]
     },
     {
-      file: "Humanified - Demo 4.mp4",
+      file: "Humanified - Demo 4 compressed.mp4",
     },
     
+    {
+      array: [
+        {
+          textSection: {
+            title: "Model & Validation",
+            file: "Model and Validation.txt",
+          }
+        },
+        {
+          textSection: null
+      }
+      ]
+    },
+    {
+      array: [
+      {
+      file: "Humanified - Demo 6.mp4"
+      },
+     {
+      file: "Humanified - Demo 5.mp4",
+    }
+      ]
+    },
   ],
 };
