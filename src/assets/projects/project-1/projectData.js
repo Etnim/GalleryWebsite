@@ -63,7 +63,6 @@ export const projectDetails = {
     {
       file: "Humanified - Demo 4 compressed.mp4",
     },
-    
     {
       array: [
         {
@@ -84,6 +83,29 @@ export const projectDetails = {
       },
      {
       file: "Humanified - Demo 5.mp4",
+    }
+      ]
+    },
+    {
+      array: [
+        {
+          textSection: {
+            title: "Language support",
+            file: "Language Support.txt",
+          }
+        },
+        {
+          textSection: null
+      }
+      ]
+    },
+    {
+      array: [
+      {
+      file: "Humanified - Demo 7.mp4"
+      },
+     {
+      file: "Humanified - Demo 8.mp4",
     }
       ]
     },

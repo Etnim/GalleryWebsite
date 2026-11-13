@@ -1,0 +1,1 @@
+Humanified automatically detects the input language and lets users choose between four output languages: English, Spanish, French, and Arabic. Users can rewrite text in their preferred language without switching tools or interrupting their workflow.
